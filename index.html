@@ -3,67 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lumina Studios | English Tuition for Children in Gravesend | Ages 7–11</title>
-<meta name="description" content="A specialist English studio for children aged 7–11 in Gravesend, Kent. Reading Lab, Writing Lab, maximum 10 children per group, qualified teacher every session. Free taster session. Opening Summer 2026.">
-<meta name="keywords" content="English tuition Gravesend, children's tutor Gravesend, tutoring Gravesend, English tutor Kent, primary school tuition Gravesend, reading tutor Gravesend, writing tutor Gravesend, tutoring Gravesham">
+<title>Lumina Studios | Online English Tuition for Primary School Children | Ages 7–11</title>
+<meta name="description" content="Lumina Studios is a premium online English learning studio for children aged 7–11. Reading Lab and Writing Lab sessions, maximum 10 Luminaries per cohort, specialist-built workbooks, free taster session. Opening Summer 2026.">
+<meta name="keywords" content="online English tuition primary school, English tutor children ages 7-11, online reading tutor primary, online writing tutor KS2, primary English programme UK, KS2 English tutoring online, reading comprehension tutor, writing skills children online, primary school English help, best online English tuition UK, Year 3 Year 4 Year 5 Year 6 English tuition">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://luminastudio.uk">
- 
-<!-- Open Graph (Facebook / social sharing) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://luminastudio.uk">
-<meta property="og:title" content="Lumina Studios | English Tuition for Children in Gravesend">
-<meta property="og:description" content="Not tutoring. A studio. Maximum 10 children, qualified teacher every session, free taster session. Opening Summer 2026 in Gravesend, Kent.">
+<meta property="og:title" content="Lumina Studios | Premium Online English Tuition for Children Ages 7–11">
+<meta property="og:description" content="Not tutoring. A studio. Maximum 10 children per cohort, specialist workbooks, Reading Lab and Writing Lab, free taster session. Opening Summer 2026.">
 <meta property="og:site_name" content="Lumina Studios">
- 
-<!-- Schema markup — Local Business -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Lumina Studios",
-  "description": "A specialist English learning studio for children aged 7–11 in Gravesend, Kent. Reading Lab and Writing Lab sessions, maximum 10 children per group, qualified teacher every session.",
+  "description": "A premium online English learning studio for children aged 7 to 11. Reading Lab and Writing Lab sessions, maximum 10 children per cohort, specialist-built workbooks matched to the child's level, qualified teacher every session.",
   "url": "https://luminastudio.uk",
-  "telephone": "",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Gravesend",
-    "addressRegion": "Kent",
-    "addressCountry": "GB"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "51.4415",
-    "longitude": "0.3685"
-  },
-  "areaServed": [
-    "Gravesend", "Gravesham", "Northfleet", "Dartford", "Kent"
-  ],
-  "audience": {
-    "@type": "EducationalAudience",
-    "educationalRole": "student",
-    "audienceType": "Children aged 7 to 11"
-  },
+  "areaServed": "United Kingdom",
+  "audience": { "@type": "EducationalAudience", "educationalRole": "student", "audienceType": "Children aged 7 to 11, KS2 primary school" },
   "openingDate": "2026-06-01",
-  "priceRange": "££",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Lumina Studios Programmes",
     "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Free Taster Session",
-        "price": "0",
-        "priceCurrency": "GBP",
-        "description": "A full studio session — Reading Lab and Writing Lab — at no cost and with no obligation to enrol."
-      },
-      {
-        "@type": "Offer",
-        "name": "12-Week English Programme",
-        "price": "200",
-        "priceCurrency": "GBP",
-        "description": "Twice-weekly sessions (Reading Lab + Writing Lab), specialist workbook, homework book, two written assessment reports."
-      }
+      { "@type": "Offer", "name": "Free Taster Session", "price": "0", "priceCurrency": "GBP", "description": "A full online studio session at no cost and with no obligation to enrol." },
+      { "@type": "Offer", "name": "12-Week Online English Programme", "price": "200", "priceCurrency": "GBP", "description": "Twice-weekly online sessions, specialist workbook and homework book posted to your door, two written assessment reports, Lumina Passport." }
     ]
   }
 }
@@ -73,883 +38,296 @@
 <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  /* ── Brevo form Lumina overrides ── */
-  :where(.sib-form-message-panel) { display: none; }
- 
-  .sib-lumina-error {
-    background: rgba(255,80,80,0.12) !important;
-    border: 1px solid rgba(255,80,80,0.4) !important;
-    border-radius: 3px; color: #ffaaaa !important;
-    margin-bottom: 16px; padding: 12px 16px;
-    font-family: 'DM Sans', sans-serif !important;
-    font-size: 0.85rem !important;
-  }
-  .sib-lumina-success {
-    background: rgba(42,171,184,0.15) !important;
-    border: 1px solid rgba(42,171,184,0.4) !important;
-    border-radius: 3px; color: var(--teal) !important;
-    margin-bottom: 16px; padding: 12px 16px;
-    font-family: 'DM Sans', sans-serif !important;
-    font-size: 0.85rem !important;
-  }
-  .sib-lumina-error .sib-notification__icon,
-  .sib-lumina-success .sib-notification__icon {
-    width: 16px; height: 16px; margin-right: 8px;
-    vertical-align: middle; fill: currentColor;
-  }
- 
-  .lumina-brevo-form { width: 100%; }
- 
-  .lumina-form-row {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 16px; margin-bottom: 16px;
-  }
-  .lumina-form-group { display: flex; flex-direction: column; }
- 
-  .lumina-sms-row {
-    display: grid; grid-template-columns: 100px 1fr; gap: 8px;
-  }
-  .lumina-country-select {
-    padding: 14px 8px !important;
-    font-size: 0.8rem !important;
-  }
-  .lumina-sms-input { flex: 1; }
- 
-  .lumina-field-error {
-    display: none; font-size: 0.75rem !important;
-    color: #ff8080 !important; background: none !important;
-    border: none !important; padding: 2px 0 0 !important;
-    font-family: 'DM Sans', sans-serif !important;
-  }
-  .lumina-field-error:not(:empty) { display: block; }
- 
-  .input--hidden { display: none !important; }
- 
-  .sib-hide-loader-icon { display: none; }
- 
-  @media (max-width: 900px) {
-    .lumina-form-row { grid-template-columns: 1fr; }
-    .lumina-sms-row { grid-template-columns: 90px 1fr; }
-  }
-</style>
- 
-<style>
-  :root {
-    --navy:   #1B2A4A;
-    --teal:   #2AABB8;
-    --light:  #E6F6F9;
-    --cream:  #FAF7F2;
-    --sand:   #E8E0D0;
-    --gold:   #C8A84B;
-    --dark:   #0F1A2E;
-    --mid:    #6B7A8D;
-    --white:  #FFFFFF;
-  }
- 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
-  html { scroll-behavior: smooth; }
- 
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
-    color: var(--navy);
-    overflow-x: hidden;
-  }
- 
-  /* ── NOISE TEXTURE OVERLAY ── */
-  body::before {
-    content: '';
-    position: fixed; inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-    pointer-events: none; z-index: 9999; opacity: 0.4;
-  }
- 
-  /* ── TYPOGRAPHY ── */
-  h1, h2, h3, .serif { font-family: 'Cormorant Garamond', serif; }
- 
-  /* ── NAV ── */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 20px 40px;
-    background: rgba(250, 247, 242, 0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(27,42,74,0.08);
-  }
-  .nav-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem; font-weight: 700;
-    color: var(--navy); letter-spacing: 0.04em;
-  }
-  .nav-logo span { color: var(--teal); }
-  .nav-badge {
-    background: var(--navy); color: var(--white);
-    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em;
-    text-transform: uppercase; padding: 6px 14px;
-    border-radius: 2px;
-  }
- 
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
-    position: relative;
-    overflow: hidden;
-  }
- 
-  .hero-left {
-    display: flex; flex-direction: column; justify-content: center;
-    padding: 80px 60px 80px 60px;
-    position: relative; z-index: 2;
-  }
- 
-  .hero-eyebrow {
-    display: flex; align-items: center; gap: 12px;
-    margin-bottom: 32px;
-  }
-  .hero-eyebrow-line {
-    width: 40px; height: 1px; background: var(--teal);
-  }
-  .hero-eyebrow-text {
-    font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em;
-    text-transform: uppercase; color: var(--teal);
-  }
- 
-  .hero h1 {
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
-    font-weight: 600; line-height: 1.08;
-    color: var(--navy); margin-bottom: 28px;
-  }
-  .hero h1 em {
-    font-style: italic; color: var(--teal);
-    font-weight: 400;
-  }
- 
-  .hero-sub {
-    font-size: 1.05rem; line-height: 1.7;
-    color: var(--mid); max-width: 480px;
-    margin-bottom: 44px; font-weight: 300;
-  }
- 
-  .hero-location-h2 {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.78rem; font-weight: 400;
-    color: var(--mid); letter-spacing: 0.04em;
-    margin-bottom: 32px; margin-top: -16px;
-  }
- 
-  .hero-cta-group {
-    display: flex; align-items: center; gap: 24px;
-    flex-wrap: wrap;
-  }
- 
-  .btn-primary {
-    background: var(--navy); color: var(--white);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.06em;
-    text-transform: uppercase; padding: 16px 36px;
-    border: 2px solid var(--navy); cursor: pointer;
-    text-decoration: none; display: inline-block;
-    transition: all 0.25s ease;
-    border-radius: 2px;
-  }
-  .btn-primary:hover {
-    background: var(--teal); border-color: var(--teal);
-    transform: translateY(-2px);
-  }
- 
-  .btn-ghost {
-    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.06em;
-    text-transform: uppercase; color: var(--navy);
-    text-decoration: none; border-bottom: 1px solid var(--navy);
-    padding-bottom: 2px; transition: color 0.2s, border-color 0.2s;
-  }
-  .btn-ghost:hover { color: var(--teal); border-color: var(--teal); }
- 
-  .hero-right {
-    position: relative; background: var(--navy);
-    display: flex; align-items: center; justify-content: center;
-  }
- 
-  .hero-right-inner {
-    padding: 80px 60px;
-    display: flex; flex-direction: column;
-    gap: 40px; width: 100%;
-  }
- 
-  .stat-block {
-    border-left: 2px solid var(--teal);
-    padding-left: 24px;
-    animation: fadeUp 0.8s ease both;
-  }
-  .stat-block:nth-child(1) { animation-delay: 0.2s; }
-  .stat-block:nth-child(2) { animation-delay: 0.4s; }
-  .stat-block:nth-child(3) { animation-delay: 0.6s; }
-  .stat-block:nth-child(4) { animation-delay: 0.8s; }
- 
-  .stat-number {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3.2rem; font-weight: 600;
-    color: var(--white); line-height: 1;
-    margin-bottom: 4px;
-  }
-  .stat-number span { color: var(--teal); }
- 
-  .stat-label {
-    font-size: 0.78rem; font-weight: 400; letter-spacing: 0.1em;
-    text-transform: uppercase; color: rgba(255,255,255,0.5);
-  }
- 
-  .hero-urgency {
-    position: absolute; bottom: 40px; left: 60px; right: 60px;
-    background: rgba(42,171,184,0.12);
-    border: 1px solid rgba(42,171,184,0.3);
-    border-radius: 4px; padding: 16px 20px;
-    display: flex; align-items: center; gap: 12px;
-  }
-  .urgency-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--teal); flex-shrink: 0;
-    animation: pulse 2s infinite;
-  }
-  .urgency-text {
-    font-size: 0.78rem; font-weight: 400; color: rgba(255,255,255,0.7);
-    letter-spacing: 0.04em;
-  }
-  .urgency-text strong { color: var(--teal); }
- 
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.4); }
-  }
- 
-  /* ── WHY SECTION ── */
-  .why {
-    padding: 120px 60px;
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 80px; align-items: center;
-    max-width: 1200px; margin: 0 auto;
-  }
- 
-  .why-left {}
- 
-  .section-eyebrow {
-    display: flex; align-items: center; gap: 12px;
-    margin-bottom: 24px;
-  }
-  .section-eyebrow-line { width: 30px; height: 1px; background: var(--teal); }
-  .section-eyebrow-text {
-    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em;
-    text-transform: uppercase; color: var(--teal);
-  }
- 
-  .why-left h2 {
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    font-weight: 600; line-height: 1.12;
-    color: var(--navy); margin-bottom: 24px;
-  }
-  .why-left h2 em { font-style: italic; font-weight: 400; color: var(--teal); }
- 
-  .why-left p {
-    font-size: 1rem; line-height: 1.75;
-    color: var(--mid); font-weight: 300;
-    margin-bottom: 16px;
-  }
- 
-  .why-right {
-    display: flex; flex-direction: column; gap: 2px;
-  }
- 
-  .belief-card {
-    background: var(--white);
-    border: 1px solid var(--sand);
-    padding: 28px 32px;
-    position: relative;
-    transition: border-color 0.2s, transform 0.2s;
-    cursor: default;
-  }
-  .belief-card:hover {
-    border-color: var(--teal);
-    transform: translateX(6px);
-  }
-  .belief-card::before {
-    content: '';
-    position: absolute; left: 0; top: 0; bottom: 0;
-    width: 3px; background: var(--teal);
-    transform: scaleY(0); transform-origin: bottom;
-    transition: transform 0.3s ease;
-  }
-  .belief-card:hover::before { transform: scaleY(1); }
- 
-  .belief-n {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em;
-    text-transform: uppercase; color: var(--teal);
-    margin-bottom: 8px;
-  }
-  .belief-text {
-    font-size: 0.95rem; line-height: 1.6;
-    color: var(--navy); font-weight: 400;
-  }
- 
-  /* ── DIFFERENCE SECTION ── */
-  .difference {
-    background: var(--navy);
-    padding: 100px 60px;
-    position: relative; overflow: hidden;
-  }
-  .difference::before {
-    content: 'LUMINA';
-    position: absolute; right: -20px; top: 50%;
-    transform: translateY(-50%);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18vw; font-weight: 700;
-    color: rgba(255,255,255,0.03);
-    letter-spacing: -0.05em; line-height: 1;
-    pointer-events: none; user-select: none;
-  }
- 
-  .difference-inner { max-width: 1200px; margin: 0 auto; }
- 
-  .difference h2 {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 600; color: var(--white);
-    line-height: 1.1; margin-bottom: 60px;
-    max-width: 600px;
-  }
-  .difference h2 em { font-style: italic; color: var(--teal); font-weight: 400; }
- 
-  .difference-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-  }
- 
-  .diff-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    padding: 40px 32px;
-    transition: background 0.25s;
-  }
-  .diff-card:hover { background: rgba(42,171,184,0.08); }
- 
-  .diff-icon {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.8rem; font-weight: 600; color: var(--teal);
-    line-height: 1; margin-bottom: 16px;
-  }
-  .diff-title {
-    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--white);
-    margin-bottom: 12px;
-  }
-  .diff-text {
-    font-size: 0.88rem; line-height: 1.7;
-    color: rgba(255,255,255,0.55); font-weight: 300;
-  }
- 
-  /* ── WHAT YOU GET ── */
-  .what {
-    padding: 120px 60px;
-    max-width: 1200px; margin: 0 auto;
-  }
- 
-  .what-header {
-    text-align: center; margin-bottom: 72px;
-  }
-  .what-header h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 600; color: var(--navy);
-    line-height: 1.1;
-  }
-  .what-header h2 em { font-style: italic; color: var(--teal); font-weight: 400; }
-  .what-header p {
-    margin-top: 16px; font-size: 1rem;
-    color: var(--mid); font-weight: 300; max-width: 500px;
-    margin-left: auto; margin-right: auto;
-  }
- 
-  .labs {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 24px; margin-bottom: 60px;
-  }
- 
-  .lab-card {
-    padding: 48px 44px; position: relative; overflow: hidden;
-  }
-  .lab-card.reading {
-    background: var(--navy);
-  }
-  .lab-card.writing {
-    background: var(--light);
-    border: 1px solid var(--teal);
-  }
- 
-  .lab-card-bg {
-    position: absolute; right: -20px; bottom: -20px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 8rem; font-weight: 700; line-height: 1;
-    opacity: 0.07; pointer-events: none;
-    color: var(--white);
-  }
-  .lab-card.writing .lab-card-bg { color: var(--teal); }
- 
-  .lab-tag {
-    display: inline-block;
-    font-size: 0.68rem; font-weight: 500; letter-spacing: 0.18em;
-    text-transform: uppercase; padding: 5px 12px;
-    border-radius: 2px; margin-bottom: 24px;
-    background: rgba(42,171,184,0.2); color: var(--teal);
-  }
-  .lab-card.writing .lab-tag {
-    background: var(--navy); color: var(--white);
-  }
- 
-  .lab-title {
-    font-size: 1.8rem; font-weight: 600;
-    font-family: 'Cormorant Garamond', serif;
-    margin-bottom: 16px;
-    color: var(--white);
-  }
-  .lab-card.writing .lab-title { color: var(--navy); }
- 
-  .lab-desc {
-    font-size: 0.9rem; line-height: 1.7; font-weight: 300;
-    color: rgba(255,255,255,0.65); margin-bottom: 24px;
-  }
-  .lab-card.writing .lab-desc { color: var(--mid); }
- 
-  .lab-duration {
-    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--teal);
-  }
- 
-  .inclusions {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
-  }
- 
-  .inclusion {
-    background: var(--white); border: 1px solid var(--sand);
-    padding: 28px 24px; text-align: center;
-    transition: border-color 0.2s;
-  }
-  .inclusion:hover { border-color: var(--teal); }
- 
-  .inclusion-icon {
-    font-size: 1.6rem; margin-bottom: 12px; display: block;
-  }
-  .inclusion-title {
-    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em;
-    text-transform: uppercase; color: var(--navy);
-    margin-bottom: 8px;
-  }
-  .inclusion-desc {
-    font-size: 0.8rem; line-height: 1.6; color: var(--mid); font-weight: 300;
-  }
- 
-  /* ── PRICING ── */
-  .pricing {
-    background: var(--cream);
-    border-top: 1px solid var(--sand);
-    border-bottom: 1px solid var(--sand);
-    padding: 100px 60px;
-  }
- 
-  .pricing-inner {
-    max-width: 1000px; margin: 0 auto;
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 60px; align-items: center;
-  }
- 
-  .pricing-left h2 {
-    font-size: clamp(2rem, 3.5vw, 2.8rem);
-    font-weight: 600; color: var(--navy);
-    line-height: 1.1; margin-bottom: 20px;
-  }
-  .pricing-left h2 em { font-style: italic; color: var(--teal); }
- 
-  .pricing-left p {
-    font-size: 0.95rem; line-height: 1.75;
-    color: var(--mid); font-weight: 300; margin-bottom: 32px;
-  }
- 
-  .taster-badge {
-    display: inline-flex; align-items: center; gap: 10px;
-    background: var(--teal); color: var(--white);
-    padding: 12px 20px; border-radius: 2px;
-  }
-  .taster-badge-label {
-    font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-  .taster-badge-value {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem; font-weight: 700;
-    border-left: 1px solid rgba(255,255,255,0.4);
-    padding-left: 10px;
-  }
- 
-  .pricing-right {
-    background: var(--navy); padding: 48px 44px; position: relative;
-  }
- 
-  .price-display {
-    display: flex; align-items: flex-start; gap: 8px;
-    margin-bottom: 8px;
-  }
-  .price-currency {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem; font-weight: 600; color: var(--teal);
-    margin-top: 8px;
-  }
-  .price-amount {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 5.5rem; font-weight: 700; color: var(--white);
-    line-height: 1;
-  }
-  .price-period {
-    font-size: 0.8rem; color: rgba(255,255,255,0.45);
-    letter-spacing: 0.1em; text-transform: uppercase;
-    margin-bottom: 28px;
-  }
- 
-  .price-breakdown {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 24px; display: flex; flex-direction: column; gap: 12px;
-    margin-bottom: 36px;
-  }
-  .price-line {
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .price-line-label {
-    font-size: 0.82rem; color: rgba(255,255,255,0.5); font-weight: 300;
-  }
-  .price-line-val {
-    font-size: 0.82rem; color: var(--white); font-weight: 400;
-  }
- 
-  .spaces-bar {
-    margin-bottom: 28px;
-  }
-  .spaces-bar-label {
-    display: flex; justify-content: space-between;
-    font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;
-    margin-bottom: 8px;
-    color: rgba(255,255,255,0.5);
-  }
-  .spaces-bar-label span:last-child { color: var(--teal); }
-  .spaces-bar-track {
-    height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px;
-    overflow: hidden;
-  }
-  .spaces-bar-fill {
-    height: 100%; width: 0%;
-    background: var(--teal); border-radius: 2px;
-    transition: width 1.5s ease 0.5s;
-  }
- 
-  /* ── WAITLIST FORM ── */
-  #waitlist {
-    padding: 100px 60px;
-    background: var(--navy);
-    position: relative; overflow: hidden;
-  }
-  #waitlist::before {
-    content: '';
-    position: absolute; top: -200px; right: -200px;
-    width: 600px; height: 600px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(42,171,184,0.12) 0%, transparent 70%);
-    pointer-events: none;
-  }
- 
-  .waitlist-inner {
-    max-width: 640px; margin: 0 auto; position: relative; z-index: 2;
-    text-align: center;
-  }
- 
-  .waitlist-inner h2 {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 600; color: var(--white);
-    line-height: 1.1; margin-bottom: 16px;
-  }
-  .waitlist-inner h2 em { font-style: italic; color: var(--teal); }
- 
-  .waitlist-inner p {
-    font-size: 0.95rem; line-height: 1.7; color: rgba(255,255,255,0.55);
-    font-weight: 300; margin-bottom: 48px;
-  }
- 
-  .form-group {
-    margin-bottom: 16px; text-align: left;
-  }
-  .form-label {
-    display: block; font-size: 0.72rem; font-weight: 500;
-    letter-spacing: 0.12em; text-transform: uppercase;
-    color: rgba(255,255,255,0.5); margin-bottom: 8px;
-  }
-  .form-input {
-    width: 100%; background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12); color: var(--white);
-    font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
-    padding: 14px 18px; border-radius: 2px; outline: none;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .form-input::placeholder { color: rgba(255,255,255,0.25); }
-  .form-input:focus {
-    border-color: var(--teal);
-    background: rgba(42,171,184,0.06);
-  }
- 
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
- 
-  .form-select {
-    width: 100%; background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12);
-    color: var(--white); font-family: 'DM Sans', sans-serif;
-    font-size: 0.95rem; padding: 14px 18px; border-radius: 2px;
-    outline: none; cursor: pointer;
-    transition: border-color 0.2s;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232AABB8' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-  }
-  .form-select:focus { border-color: var(--teal); }
-  .form-select option { background: var(--dark); }
- 
-  .form-submit {
-    width: 100%; margin-top: 24px;
-    background: var(--teal); color: var(--white);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.1em;
-    text-transform: uppercase; padding: 18px;
-    border: none; cursor: pointer; border-radius: 2px;
-    transition: all 0.25s ease; position: relative;
-  }
-  .form-submit:hover {
-    background: var(--white); color: var(--navy);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(42,171,184,0.3);
-  }
- 
-  .form-note {
-    margin-top: 16px; font-size: 0.78rem;
-    color: rgba(255,255,255,0.3); text-align: center;
-  }
- 
-  .success-msg {
-    display: none; background: rgba(42,171,184,0.15);
-    border: 1px solid rgba(42,171,184,0.4);
-    border-radius: 4px; padding: 32px; text-align: center;
-  }
-  .success-msg.show { display: block; }
-  .success-msg h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem; color: var(--teal); margin-bottom: 8px;
-  }
-  .success-msg p { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
- 
-  /* ── FOOTER ── */
-  footer {
-    padding: 40px 60px;
-    background: var(--dark);
-    display: flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 16px;
-  }
-  .footer-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem; font-weight: 700; color: var(--white);
-    letter-spacing: 0.04em;
-  }
-  .footer-logo span { color: var(--teal); }
-  .footer-text {
-    font-size: 0.78rem; color: rgba(255,255,255,0.3);
-  }
- 
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
- 
-  .fade-up {
-    opacity: 0; transform: translateY(32px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .fade-up.visible { opacity: 1; transform: translateY(0); }
- 
-  /* ── ASSESSMENT STRIP ── */
-  .assessment-strip {
-    margin-top: 60px;
-    background: var(--navy);
-    padding: 64px 56px;
-    position: relative; overflow: hidden;
-  }
-  .assessment-strip::before {
-    content: '';
-    position: absolute; top: -120px; right: -120px;
-    width: 400px; height: 400px; border-radius: 50%;
-    background: radial-gradient(circle, rgba(42,171,184,0.1) 0%, transparent 70%);
-    pointer-events: none;
-  }
- 
-  .assessment-header { margin-bottom: 20px; }
- 
-  .assessment-title {
-    font-size: clamp(1.6rem, 3vw, 2.4rem);
-    font-weight: 600; color: var(--white);
-    line-height: 1.15; margin-bottom: 16px;
-    text-align: center;
-  }
-  .assessment-title em { font-style: italic; color: var(--teal); font-weight: 400; }
- 
-  .assessment-sub {
-    font-size: 0.92rem; line-height: 1.75;
-    color: rgba(255,255,255,0.55); font-weight: 300;
-    max-width: 680px; margin: 0 auto 48px;
-    text-align: center;
-  }
- 
-  .assessment-cards {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 0; align-items: start;
-    max-width: 900px; margin: 0 auto 36px;
-  }
- 
-  .assessment-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 36px 32px;
-    transition: border-color 0.25s, background 0.25s;
-  }
-  .assessment-card:hover {
-    border-color: rgba(42,171,184,0.5);
-    background: rgba(42,171,184,0.06);
-  }
- 
-  .assessment-week {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem; font-weight: 700; color: var(--teal);
-    line-height: 1; margin-bottom: 4px;
-  }
- 
-  .assessment-label {
-    font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em;
-    text-transform: uppercase; color: rgba(255,255,255,0.4);
-    margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.08);
-    padding-bottom: 16px;
-  }
- 
-  .assessment-desc {
-    font-size: 0.88rem; line-height: 1.7;
-    color: rgba(255,255,255,0.6); font-weight: 300;
-    margin-bottom: 20px;
-  }
- 
-  .assessment-list {
-    list-style: none; display: flex; flex-direction: column; gap: 8px;
-  }
-  .assessment-list li {
-    font-size: 0.82rem; color: rgba(255,255,255,0.5);
-    padding-left: 16px; position: relative; font-weight: 300;
-  }
-  .assessment-list li::before {
-    content: '—';
-    position: absolute; left: 0;
-    color: var(--teal); font-weight: 400;
-  }
- 
-  .assessment-divider {
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    padding: 0 24px; gap: 12px;
-    padding-top: 80px;
-  }
-  .assessment-divider-line {
-    width: 1px; height: 60px;
-    background: rgba(42,171,184,0.3);
-  }
-  .assessment-divider-dot {
-    width: 32px; height: 32px; border-radius: 50%;
-    background: var(--teal); color: var(--navy);
-    font-size: 1rem; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
-  }
- 
-  .assessment-note {
-    max-width: 700px; margin: 0 auto;
-    background: rgba(42,171,184,0.08);
-    border: 1px solid rgba(42,171,184,0.2);
-    border-radius: 3px; padding: 16px 20px;
-    font-size: 0.82rem; line-height: 1.65;
-    color: rgba(255,255,255,0.5); font-weight: 300;
-    text-align: center; display: flex;
-    align-items: flex-start; gap: 10px;
-    justify-content: center;
-  }
-  .assessment-note-icon {
-    color: var(--teal); flex-shrink: 0; margin-top: 1px;
-  }
- 
-  /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
-    nav { padding: 16px 24px; }
-    .hero { grid-template-columns: 1fr; }
-    .hero-right { display: none; }
-    .hero-left { padding: 60px 24px; }
-    .why { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
-    .difference { padding: 80px 24px; }
-    .difference-grid { grid-template-columns: 1fr; }
-    .what { padding: 80px 24px; }
-    .labs { grid-template-columns: 1fr; }
-    .inclusions { grid-template-columns: 1fr 1fr; }
-    .pricing { padding: 80px 24px; }
-    .pricing-inner { grid-template-columns: 1fr; }
-    #waitlist { padding: 80px 24px; }
-    footer { padding: 32px 24px; flex-direction: column; text-align: center; }
-    .assessment-strip { padding: 48px 24px; }
-    .assessment-cards { grid-template-columns: 1fr; }
-    .assessment-divider { flex-direction: row; padding: 0; margin: 16px 0; }
-    .assessment-divider-line { width: 60px; height: 1px; }
-    .form-row { grid-template-columns: 1fr; }
-  }
+:where(.sib-form-message-panel){display:none}
+.sib-lumina-error{background:rgba(255,80,80,.12)!important;border:1px solid rgba(255,80,80,.4)!important;border-radius:3px;color:#ffaaaa!important;margin-bottom:16px;padding:12px 16px;font-family:'DM Sans',sans-serif!important;font-size:.85rem!important}
+.sib-lumina-success{background:rgba(42,171,184,.15)!important;border:1px solid rgba(42,171,184,.4)!important;border-radius:3px;color:var(--teal)!important;margin-bottom:16px;padding:12px 16px;font-family:'DM Sans',sans-serif!important;font-size:.85rem!important}
+.sib-lumina-error .sib-notification__icon,.sib-lumina-success .sib-notification__icon{width:16px;height:16px;margin-right:8px;vertical-align:middle;fill:currentColor}
+.lumina-brevo-form{width:100%}
+.lumina-form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.lumina-form-group{display:flex;flex-direction:column}
+.lumina-sms-row{display:grid;grid-template-columns:100px 1fr;gap:8px}
+.lumina-country-select{padding:14px 8px!important;font-size:.8rem!important}
+.lumina-field-error{display:none;font-size:.75rem!important;color:#ff8080!important;background:none!important;border:none!important;padding:2px 0 0!important;font-family:'DM Sans',sans-serif!important}
+.lumina-field-error:not(:empty){display:block}
+.input--hidden{display:none!important}
+.sib-hide-loader-icon{display:none}
+ 
+:root{--navy:#1B2A4A;--teal:#2AABB8;--light:#E6F6F9;--cream:#FAF7F2;--sand:#E8E0D0;--gold:#C8A84B;--dark:#0F1A2E;--mid:#6B7A8D;--white:#FFFFFF}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--navy);overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.4}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif}
+ 
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 40px;background:rgba(250,247,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(27,42,74,.08)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--navy);letter-spacing:.04em}
+.nav-logo span{color:var(--teal)}
+.nav-badge{background:var(--navy);color:var(--white);font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:2px;text-decoration:none;transition:background .2s}
+.nav-badge:hover{background:var(--teal)}
+ 
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:80px;position:relative;overflow:hidden}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 60px;position:relative;z-index:2}
+.hero-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:32px}
+.hero-eyebrow-line{width:40px;height:1px;background:var(--teal)}
+.hero-eyebrow-text{font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--teal)}
+.hero h1{font-size:clamp(2.8rem,5vw,4.2rem);font-weight:600;line-height:1.08;color:var(--navy);margin-bottom:28px}
+.hero h1 em{font-style:italic;color:var(--teal);font-weight:400}
+.hero-sub{font-size:1.05rem;line-height:1.7;color:var(--mid);max-width:480px;margin-bottom:14px;font-weight:300}
+.hero-seo-h2{font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:400;color:var(--mid);letter-spacing:.04em;margin-bottom:36px}
+.hero-cta-group{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.btn-primary{background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:16px 36px;border:2px solid var(--navy);cursor:pointer;text-decoration:none;display:inline-block;transition:all .25s ease;border-radius:2px}
+.btn-primary:hover{background:var(--teal);border-color:var(--teal);transform:translateY(-2px)}
+.btn-ghost{font-size:.85rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--navy);padding-bottom:2px;transition:color .2s,border-color .2s}
+.btn-ghost:hover{color:var(--teal);border-color:var(--teal)}
+.hero-right{position:relative;background:var(--navy);display:flex;align-items:center;justify-content:center}
+.hero-right-inner{padding:80px 60px;display:flex;flex-direction:column;gap:40px;width:100%}
+.stat-block{border-left:2px solid var(--teal);padding-left:24px}
+.stat-number{font-family:'Cormorant Garamond',serif;font-size:3.2rem;font-weight:600;color:var(--white);line-height:1;margin-bottom:4px}
+.stat-number span{color:var(--teal)}
+.stat-label{font-size:.78rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.hero-urgency{position:absolute;bottom:40px;left:60px;right:60px;background:rgba(42,171,184,.12);border:1px solid rgba(42,171,184,.3);border-radius:4px;padding:16px 20px;display:flex;align-items:center;gap:12px}
+.urgency-dot{width:8px;height:8px;border-radius:50%;background:var(--teal);flex-shrink:0;animation:pulse 2s infinite}
+.urgency-text{font-size:.78rem;font-weight:400;color:rgba(255,255,255,.7);letter-spacing:.04em}
+.urgency-text strong{color:var(--teal)}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+ 
+/* WHY */
+.why-wrap{background:var(--cream)}
+.why{padding:120px 60px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto}
+.section-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+.section-eyebrow-line{width:30px;height:1px;background:var(--teal)}
+.section-eyebrow-text{font-size:.7rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--teal)}
+.why-left h2{font-size:clamp(2rem,3.5vw,3rem);font-weight:600;line-height:1.12;color:var(--navy);margin-bottom:24px}
+.why-left h2 em{font-style:italic;font-weight:400;color:var(--teal)}
+.why-left p{font-size:1rem;line-height:1.75;color:var(--mid);font-weight:300;margin-bottom:16px}
+.why-right{display:flex;flex-direction:column;gap:2px}
+.belief-card{background:var(--white);border:1px solid var(--sand);padding:28px 32px;position:relative;transition:border-color .2s,transform .2s;cursor:default}
+.belief-card:hover{border-color:var(--teal);transform:translateX(6px)}
+.belief-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--teal);transform:scaleY(0);transform-origin:bottom;transition:transform .3s ease}
+.belief-card:hover::before{transform:scaleY(1)}
+.belief-n{font-family:'Cormorant Garamond',serif;font-size:.8rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+.belief-text{font-size:.95rem;line-height:1.6;color:var(--navy);font-weight:400}
+ 
+/* LUMINARIES */
+.luminaries-section{background:var(--navy);padding:100px 60px;position:relative;overflow:hidden}
+.luminaries-section::before{content:'LUMINARIES';position:absolute;right:-40px;top:50%;transform:translateY(-50%);font-family:'Cormorant Garamond',serif;font-size:14vw;font-weight:700;color:rgba(255,255,255,.03);letter-spacing:-.05em;pointer-events:none;user-select:none;white-space:nowrap}
+.luminaries-inner{max-width:1200px;margin:0 auto}
+.luminaries-inner h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:600;color:var(--white);line-height:1.1;margin-bottom:16px;max-width:600px}
+.luminaries-inner h2 em{font-style:italic;color:var(--teal);font-weight:400}
+.luminaries-intro{font-size:.95rem;line-height:1.75;color:rgba(255,255,255,.55);font-weight:300;max-width:580px;margin-bottom:60px}
+.luminary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.luminary-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:40px 32px;transition:background .25s}
+.luminary-card:hover{background:rgba(42,171,184,.08)}
+.luminary-icon{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--teal);line-height:1;margin-bottom:16px}
+.luminary-title{font-size:.85rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--white);margin-bottom:12px}
+.luminary-text{font-size:.88rem;line-height:1.7;color:rgba(255,255,255,.55);font-weight:300}
+ 
+/* DIFFERENCE */
+.difference{background:var(--cream);padding:100px 60px}
+.difference-inner{max-width:1200px;margin:0 auto}
+.difference h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:600;color:var(--navy);line-height:1.1;margin-bottom:60px;max-width:600px}
+.difference h2 em{font-style:italic;color:var(--teal);font-weight:400}
+.difference-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.diff-card{background:var(--white);border:1px solid var(--sand);padding:40px 32px;transition:border-color .25s,transform .2s}
+.diff-card:hover{border-color:var(--teal);transform:translateY(-4px)}
+.diff-icon{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--teal);line-height:1;margin-bottom:16px}
+.diff-title{font-size:.85rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);margin-bottom:12px}
+.diff-text{font-size:.88rem;line-height:1.7;color:var(--mid);font-weight:300}
+ 
+/* PARCEL */
+.parcel-section{background:var(--navy);padding:100px 60px}
+.parcel-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.parcel-visual{display:flex;justify-content:center;align-items:center}
+.parcel-box{width:240px;height:240px;background:linear-gradient(135deg,#1B2A4A 0%,#0D1829 100%);border:2px solid rgba(42,171,184,.4);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;box-shadow:0 32px 80px rgba(0,0,0,.5)}
+.parcel-box::before{content:'';position:absolute;top:50%;left:0;right:0;height:2px;background:rgba(42,171,184,.25)}
+.parcel-box::after{content:'';position:absolute;top:0;bottom:0;left:50%;width:2px;background:rgba(42,171,184,.25)}
+.parcel-logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:700;color:var(--white);letter-spacing:.1em;position:relative;z-index:2}
+.parcel-sub-label{font-size:.55rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.4);position:relative;z-index:2}
+.parcel-items{display:flex;gap:10px;position:relative;z-index:2}
+.parcel-item{font-size:1.5rem}
+.parcel-text h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:600;color:var(--white);line-height:1.15;margin-bottom:20px}
+.parcel-text h2 em{font-style:italic;color:var(--teal);font-weight:400}
+.parcel-text p{font-size:.92rem;line-height:1.75;color:rgba(255,255,255,.55);font-weight:300;margin-bottom:16px}
+.parcel-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.parcel-list li{font-size:.85rem;color:rgba(255,255,255,.6);padding-left:20px;position:relative;font-weight:300}
+.parcel-list li::before{content:'✦';position:absolute;left:0;color:var(--teal);font-size:.6rem;top:3px}
+ 
+/* WHAT */
+.what{padding:120px 60px;max-width:1200px;margin:0 auto}
+.what-header{text-align:center;margin-bottom:72px}
+.what-header h2{font-size:clamp(2rem,4vw,3rem);font-weight:600;color:var(--navy);line-height:1.1}
+.what-header h2 em{font-style:italic;color:var(--teal);font-weight:400}
+.what-header p{margin-top:16px;font-size:1rem;color:var(--mid);font-weight:300;max-width:500px;margin-left:auto;margin-right:auto}
+.labs{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:60px}
+.lab-card{padding:48px 44px;position:relative;overflow:hidden}
+.lab-card.reading{background:var(--navy)}
+.lab-card.writing{background:var(--light);border:1px solid var(--teal)}
+.lab-card-bg{position:absolute;right:-20px;bottom:-20px;font-family:'Cormorant Garamond',serif;font-size:8rem;font-weight:700;line-height:1;opacity:.07;pointer-events:none;color:var(--white)}
+.lab-card.writing .lab-card-bg{color:var(--teal)}
+.lab-tag{display:inline-block;font-size:.68rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:5px 12px;border-radius:2px;margin-bottom:24px;background:rgba(42,171,184,.2);color:var(--teal)}
+.lab-card.writing .lab-tag{background:var(--navy);color:var(--white)}
+.lab-title{font-size:1.8rem;font-weight:600;font-family:'Cormorant Garamond',serif;margin-bottom:16px;color:var(--white)}
+.lab-card.writing .lab-title{color:var(--navy)}
+.lab-desc{font-size:.9rem;line-height:1.7;font-weight:300;color:rgba(255,255,255,.65);margin-bottom:24px}
+.lab-card.writing .lab-desc{color:var(--mid)}
+.lab-duration{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+ 
+/* ASSESSMENT */
+.assessment-strip{margin-top:60px;background:var(--navy);padding:64px 56px;position:relative;overflow:hidden}
+.assessment-strip::before{content:'';position:absolute;top:-120px;right:-120px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(42,171,184,.1) 0%,transparent 70%);pointer-events:none}
+.assessment-title{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:600;color:var(--white);line-height:1.15;margin-bottom:16px;text-align:center}
+.assessment-title em{font-style:italic;color:var(--teal);font-weight:400}
+.assessment-sub{font-size:.92rem;line-height:1.75;color:rgba(255,255,255,.55);font-weight:300;max-width:680px;margin:0 auto 48px;text-align:center}
+.assessment-cards{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;max-width:900px;margin:0 auto 36px}
+.assessment-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);padding:36px 32px;transition:border-color .25s,background .25s}
+.assessment-card:hover{border-color:rgba(42,171,184,.5);background:rgba(42,171,184,.06)}
+.assessment-week{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--teal);line-height:1;margin-bottom:4px}
+.assessment-label{font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:20px;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:16px}
+.assessment-desc{font-size:.88rem;line-height:1.7;color:rgba(255,255,255,.6);font-weight:300;margin-bottom:20px}
+.assessment-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.assessment-list li{font-size:.82rem;color:rgba(255,255,255,.5);padding-left:16px;position:relative;font-weight:300}
+.assessment-list li::before{content:'—';position:absolute;left:0;color:var(--teal);font-weight:400}
+.assessment-divider{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px;gap:12px;padding-top:80px}
+.assessment-divider-line{width:1px;height:60px;background:rgba(42,171,184,.3)}
+.assessment-divider-dot{width:32px;height:32px;border-radius:50%;background:var(--teal);color:var(--navy);font-size:1rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.assessment-note{max-width:700px;margin:0 auto;background:rgba(42,171,184,.08);border:1px solid rgba(42,171,184,.2);border-radius:3px;padding:16px 20px;font-size:.82rem;line-height:1.65;color:rgba(255,255,255,.5);font-weight:300;text-align:center;display:flex;align-items:flex-start;gap:10px;justify-content:center}
+.assessment-note-icon{color:var(--teal);flex-shrink:0;margin-top:1px}
+ 
+/* INCLUSIONS */
+.inclusions{display:grid;grid-template-columns:repeat(5,1fr);gap:2px}
+.inclusion{background:var(--white);border:1px solid var(--sand);padding:28px 20px;text-align:center;transition:border-color .2s}
+.inclusion:hover{border-color:var(--teal)}
+.inclusion-icon{font-size:1.6rem;margin-bottom:12px;display:block}
+.inclusion-title{font-size:.78rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
+.inclusion-desc{font-size:.78rem;line-height:1.6;color:var(--mid);font-weight:300}
+ 
+/* PASSPORT */
+.passport-section{background:var(--cream);padding:100px 60px}
+.passport-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.passport-visual{display:flex;justify-content:center}
+.passport-book{width:200px;height:280px;background:linear-gradient(135deg,#1B2A4A 0%,#0D1829 100%);border-radius:4px 10px 10px 4px;position:relative;box-shadow:-8px 8px 40px rgba(0,0,0,.2),8px 8px 60px rgba(0,0,0,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border-left:6px solid var(--teal)}
+.passport-book::before{content:'';position:absolute;left:-3px;top:10%;bottom:10%;width:2px;background:rgba(42,171,184,.4)}
+.passport-emblem{font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--teal);opacity:.8}
+.passport-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--white);letter-spacing:.1em}
+.passport-sub-text{font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.passport-dots{display:flex;gap:6px;position:absolute;bottom:18px}
+.p-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.2)}
+.p-dot.lit{background:var(--teal)}
+.passport-text h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:600;color:var(--navy);line-height:1.15;margin-bottom:20px}
+.passport-text h2 em{font-style:italic;color:var(--teal);font-weight:400}
+.passport-text p{font-size:.92rem;line-height:1.75;color:var(--mid);font-weight:300;margin-bottom:16px}
+.passport-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.passport-features li{font-size:.85rem;color:var(--navy);padding-left:20px;position:relative;font-weight:300}
+.passport-features li::before{content:'✦';position:absolute;left:0;color:var(--teal);font-size:.6rem;top:3px}
+ 
+/* PRICING */
+.pricing{background:var(--cream);border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);padding:100px 60px}
+.pricing-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.pricing-left h2{font-size:clamp(2rem,3.5vw,2.8rem);font-weight:600;color:var(--navy);line-height:1.1;margin-bottom:20px}
+.pricing-left h2 em{font-style:italic;color:var(--teal)}
+.pricing-left p{font-size:.95rem;line-height:1.75;color:var(--mid);font-weight:300;margin-bottom:32px}
+.taster-badge{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:var(--white);padding:12px 20px;border-radius:2px;margin-bottom:16px}
+.taster-badge-label{font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.taster-badge-value{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;border-left:1px solid rgba(255,255,255,.4);padding-left:10px}
+.pricing-right{background:var(--navy);padding:48px 44px}
+.price-display{display:flex;align-items:flex-start;gap:8px;margin-bottom:8px}
+.price-currency{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--teal);margin-top:8px}
+.price-amount{font-family:'Cormorant Garamond',serif;font-size:5.5rem;font-weight:700;color:var(--white);line-height:1}
+.price-period{font-size:.8rem;color:rgba(255,255,255,.45);letter-spacing:.1em;text-transform:uppercase;margin-bottom:28px}
+.price-breakdown{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;flex-direction:column;gap:12px;margin-bottom:36px}
+.price-line{display:flex;justify-content:space-between;align-items:center}
+.price-line-label{font-size:.82rem;color:rgba(255,255,255,.5);font-weight:300}
+.price-line-val{font-size:.82rem;color:var(--white);font-weight:400}
+.spaces-bar{margin-bottom:28px}
+.spaces-bar-label{display:flex;justify-content:space-between;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;color:rgba(255,255,255,.5)}
+.spaces-bar-label span:last-child{color:var(--teal)}
+.spaces-bar-track{height:4px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
+.spaces-bar-fill{height:100%;width:0%;background:var(--teal);border-radius:2px;transition:width 1.5s ease .5s}
+ 
+/* WAITLIST */
+#waitlist{padding:100px 60px;background:var(--navy);position:relative;overflow:hidden}
+#waitlist::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(42,171,184,.12) 0%,transparent 70%);pointer-events:none}
+.waitlist-inner{max-width:640px;margin:0 auto;position:relative;z-index:2;text-align:center}
+.waitlist-inner h2{font-size:clamp(2rem,4vw,3.2rem);font-weight:600;color:var(--white);line-height:1.1;margin-bottom:16px}
+.waitlist-inner h2 em{font-style:italic;color:var(--teal)}
+.waitlist-inner > p{font-size:.95rem;line-height:1.7;color:rgba(255,255,255,.55);font-weight:300;margin-bottom:48px}
+.form-group{margin-bottom:16px;text-align:left}
+.form-label{display:block;font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px}
+.form-input{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:var(--white);font-family:'DM Sans',sans-serif;font-size:.95rem;padding:14px 18px;border-radius:2px;outline:none;transition:border-color .2s,background .2s}
+.form-input::placeholder{color:rgba(255,255,255,.25)}
+.form-input:focus{border-color:var(--teal);background:rgba(42,171,184,.06)}
+.form-submit{width:100%;margin-top:24px;background:var(--teal);color:var(--white);font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:18px;border:none;cursor:pointer;border-radius:2px;transition:all .25s ease}
+.form-submit:hover{background:var(--white);color:var(--navy);transform:translateY(-2px);box-shadow:0 8px 32px rgba(42,171,184,.3)}
+.form-note{margin-top:16px;font-size:.78rem;color:rgba(255,255,255,.3);text-align:center}
+ 
+footer{padding:40px 60px;background:var(--dark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--white);letter-spacing:.04em}
+.footer-logo span{color:var(--teal)}
+.footer-text{font-size:.78rem;color:rgba(255,255,255,.3)}
+ 
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+ 
+@media(max-width:900px){
+  nav{padding:16px 24px}
+  .hero{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .hero-left{padding:60px 24px}
+  .why{grid-template-columns:1fr;padding:80px 24px;gap:48px}
+  .luminaries-section{padding:80px 24px}
+  .luminary-grid{grid-template-columns:1fr}
+  .difference{padding:80px 24px}
+  .difference-grid{grid-template-columns:1fr}
+  .parcel-section{padding:80px 24px}
+  .parcel-inner{grid-template-columns:1fr}
+  .what{padding:80px 24px}
+  .labs{grid-template-columns:1fr}
+  .inclusions{grid-template-columns:1fr 1fr}
+  .assessment-strip{padding:48px 24px}
+  .assessment-cards{grid-template-columns:1fr}
+  .assessment-divider{flex-direction:row;padding:0;margin:16px 0}
+  .assessment-divider-line{width:60px;height:1px}
+  .passport-section{padding:80px 24px}
+  .passport-inner{grid-template-columns:1fr}
+  .pricing{padding:80px 24px}
+  .pricing-inner{grid-template-columns:1fr}
+  #waitlist{padding:80px 24px}
+  footer{padding:32px 24px;flex-direction:column;text-align:center}
+  .lumina-form-row{grid-template-columns:1fr}
+  .lumina-sms-row{grid-template-columns:90px 1fr}
+}
 </style>
 </head>
 <body>
  
-<!-- NAV -->
+<a href="#main-content" style="position:absolute;left:-9999px;top:0;z-index:999;background:var(--teal);color:white;padding:8px 16px;font-size:.8rem;" onfocus="this.style.left='0'">Skip to content</a>
 <nav>
   <div class="nav-logo">Lumina<span>.</span></div>
-  <a href="#waitlist" class="nav-badge">Secure Your Place</a>
+  <a href="#waitlist" class="nav-badge">Join the Waiting List</a>
 </nav>
  
+<main id="main-content">
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
     <div class="hero-eyebrow">
       <div class="hero-eyebrow-line"></div>
-      <span class="hero-eyebrow-text">Gravesend — Opening Summer 2026</span>
+      <span class="hero-eyebrow-text">Online · Ages 7–11 · Opening Summer 2026</span>
     </div>
     <h1>Most children<br>aren't behind.<br>They've never been<br><em>expected to be great.</em></h1>
-    <p class="hero-sub">Lumina Studios is a first-of-its-kind English learning studio for ages 7–11. Not a tutoring group. A studio where children discover they are capable of far more than anyone has asked of them.</p>
-    <h2 class="hero-location-h2">English tuition for children in Gravesend, Kent — Opening Summer 2026</h2>
+    <p class="hero-sub">Lumina Studios is a premium online English tuition programme for primary school children in Years 2 to 6. Not tutoring. Not a class. A studio where children discover they are capable of far more than anyone has ever asked of them.</p>
+    <h2 class="hero-seo-h2">Online English tuition for primary school children in Years 2–6 · KS2 Reading comprehension and Writing skills · Ages 7–11 · UK-wide</h2>
     <div class="hero-cta-group">
       <a href="#waitlist" class="btn-primary">Join the Waiting List</a>
       <a href="#why" class="btn-ghost">Our philosophy</a>
     </div>
   </div>
- 
   <div class="hero-right">
     <div class="hero-right-inner">
       <div class="stat-block">
         <div class="stat-number">10<span>.</span></div>
-        <div class="stat-label">Spaces. Total. In this cohort.</div>
+        <div class="stat-label">Luminaries per cohort. Always.</div>
       </div>
       <div class="stat-block">
         <div class="stat-number">2<span>×</span></div>
@@ -961,18 +339,18 @@
       </div>
       <div class="stat-block">
         <div class="stat-number">1<span>:1</span></div>
-        <div class="stat-label">Access to a qualified teacher every session</div>
+        <div class="stat-label">Personal teacher time in every session</div>
       </div>
     </div>
     <div class="hero-urgency">
       <div class="urgency-dot"></div>
-      <p class="urgency-text">Gravesend's first Lumina Studio. <strong>Free taster session</strong> available — no commitment required.</p>
+      <p class="urgency-text">Opening Summer 2026. <strong>Free taster session</strong> — no commitment until you've seen it.</p>
     </div>
   </div>
 </section>
  
 <!-- WHY -->
-<section id="why" style="background: var(--cream);">
+<section id="why" aria-label="Why Lumina Studios exists — our philosophy" class="why-wrap">
   <div class="why">
     <div class="why-left fade-up">
       <div class="section-eyebrow">
@@ -980,118 +358,147 @@
         <span class="section-eyebrow-text">Why Lumina exists</span>
       </div>
       <h2>Children don't lack<br>ability. They lack<br><em>the right environment.</em></h2>
-      <p>We believe every child in your home is capable of reading deeply, writing with precision and thinking independently. The gap between where they are and where they could be isn't a talent gap.</p>
-      <p>It's an expectations gap. And we're here to close it.</p>
+      <p>We believe every child in your home — whether in Year 2 or Year 6, wherever they are on the KS2 journey — is capable of reading deeply, writing with precision and thinking independently. The gap between where they are and where they could be isn't a talent gap.</p>
+      <p>It's an expectations gap. Lumina exists to close it.</p>
     </div>
     <div class="why-right fade-up">
-      <div class="belief-card">
-        <div class="belief-n">01</div>
-        <div class="belief-text">"Children rise to what is expected of them. We set the bar at excellence — and we help them reach it."</div>
+      <div class="belief-card"><div class="belief-n">01</div><div class="belief-text">"Children rise to what is expected of them. We set the bar at excellence — and we build every child up to meet it."</div></div>
+      <div class="belief-card"><div class="belief-n">02</div><div class="belief-text">"The best thing we can teach a child is that they don't need us. Independent learners for life — that's the goal."</div></div>
+      <div class="belief-card"><div class="belief-n">03</div><div class="belief-text">"Year group tells us where a child has been. Level tells us what they're ready for. We teach to the level, not the label."</div></div>
+      <div class="belief-card"><div class="belief-n">04</div><div class="belief-text">"Genuine knowledge produces genuine writing. We build both — in parallel, in every session, every week."</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- LUMINARIES -->
+<section class="luminaries-section" aria-label="The Lumina community — Luminaries">
+  <div class="luminaries-inner">
+    <div class="section-eyebrow fade-up" style="margin-bottom:16px;">
+      <div class="section-eyebrow-line" style="background:rgba(255,255,255,.3);"></div>
+      <span class="section-eyebrow-text" style="color:rgba(255,255,255,.5);">The community</span>
+    </div>
+    <h2 class="fade-up">Our students are not pupils.<br>They are <em>Luminaries.</em></h2>
+    <p class="luminaries-intro fade-up">A Luminary is someone who illuminates the world around them. That is what we are building — not just readers and writers, but children who think, question and inspire. Children who don't wait to be told what to do with an idea. They lead with it.</p>
+    <div class="luminary-grid">
+      <div class="luminary-card fade-up">
+        <div class="luminary-icon">✦</div>
+        <h3 class="luminary-title">The Lumina Standard</h3>
+        <p class="luminary-text">Luminaries hold a shared standard — not competing with each other, but united by a single expectation: that every piece of writing should earn its place. That standard travels with them long after Lumina ends.</p>
       </div>
-      <div class="belief-card">
-        <div class="belief-n">02</div>
-        <div class="belief-text">"The best thing we can teach a child is that they don't need us. Independent learners for life — that's the goal."</div>
+      <div class="luminary-card fade-up">
+        <div class="luminary-icon">◈</div>
+        <h3 class="luminary-title">Level by Level</h3>
+        <p class="luminary-text">Luminaries progress through five levels — not when the calendar says so, but when they are ready. Each level completed is marked, celebrated and recorded permanently in their Lumina Passport. The journey has weight because the milestones are real.</p>
       </div>
-      <div class="belief-card">
-        <div class="belief-n">03</div>
-        <div class="belief-text">"Year group labels tell us where a child has been, not what they're capable of. We match the work to the child, not the child to the curriculum."</div>
-      </div>
-      <div class="belief-card">
-        <div class="belief-n">04</div>
-        <div class="belief-text">"Genuine knowledge produces genuine writing. We build both — in parallel, in every session."</div>
+      <div class="luminary-card fade-up">
+        <div class="luminary-icon">✉</div>
+        <h3 class="luminary-title">Recognition That Arrives</h3>
+        <p class="luminary-text">After every Big Write assessment, a personal card from their teacher arrives through the letterbox — stamped, signed and addressed to the child. Not a notification. Not an email. Something they can hold. Progress made visible and permanent.</p>
       </div>
     </div>
   </div>
 </section>
  
-<!-- WHAT MAKES IT DIFFERENT -->
-<section class="difference">
+<!-- DIFFERENCE -->
+<section class="difference" aria-label="How Lumina online English tuition works">
   <div class="difference-inner">
+    <div class="section-eyebrow fade-up">
+      <div class="section-eyebrow-line"></div>
+      <span class="section-eyebrow-text">Why it works</span>
+    </div>
     <h2 class="fade-up">This is not <em>tutoring.</em><br>This is a studio.</h2>
     <div class="difference-grid">
-      <div class="diff-card fade-up">
-        <div class="diff-icon">10</div>
-        <div class="diff-title">Maximum 10 children</div>
-        <div class="diff-text">Every child in the room gets direct, personal time with a qualified teacher. We cap the group and hold the line — always.</div>
+      <div class="diff-card fade-up"><div class="diff-icon">10</div><h3 class="diff-title">Maximum 10 children per online English cohort</h3><p class="diff-text">Every child in the cohort gets direct, personal 1:1 time with a qualified teacher in every session. We cap the group and hold the line — always.</p></div>
+      <div class="diff-card fade-up"><div class="diff-icon">≠</div><h3 class="diff-title">Levelled by ability, not year group</h3><p class="diff-text">Children receive a workbook matched to where they actually are — not where the school system has placed them. Challenged and supported in exactly the right measure.</p></div>
+      <div class="diff-card fade-up"><div class="diff-icon">↗</div><h3 class="diff-title">High expectations for every child</h3><p class="diff-text">We welcome every level of ability. We do not lower the bar. We raise the child to meet it. That is the Lumina commitment and it never changes.</p></div>
+      <div class="diff-card fade-up"><div class="diff-icon">✦</div><h3 class="diff-title">Specialist-built English workbooks</h3><p class="diff-text">Every workbook and homework book your child receives has been built from scratch by specialist teachers — not downloaded, not borrowed. Created for this programme alone.</p></div>
+      <div class="diff-card fade-up"><div class="diff-icon">⟲</div><h3 class="diff-title">Building the reading and writing habit</h3><p class="diff-text">Homework books extend the learning between sessions. Children build a daily relationship with reading and writing — not just something that happens twice a week and stops there.</p></div>
+      <div class="diff-card fade-up"><div class="diff-icon">◈</div><h3 class="diff-title">Independent learning, by design</h3><p class="diff-text">Sessions are built for children to work through their workbooks independently. The teacher supports — but the child leads. Every session. Every week.</p></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- THE PARCEL -->
+<section class="parcel-section">
+  <div class="parcel-inner">
+    <div class="parcel-visual fade-up">
+      <div class="parcel-box">
+        <div class="parcel-logo">LUMINA</div>
+        <div class="parcel-sub-label">Studios</div>
+        <div class="parcel-items">
+          <span class="parcel-item">📖</span>
+          <span class="parcel-item">📝</span>
+          <span class="parcel-item">☕</span>
+          <span class="parcel-item">🍫</span>
+        </div>
       </div>
-      <div class="diff-card fade-up">
-        <div class="diff-icon">≠</div>
-        <div class="diff-title">Level, not year group</div>
-        <div class="diff-text">Children receive a workbook matched to where they actually are — not where the school system has placed them. Challenged and supported in exactly the right measure.</div>
+    </div>
+    <div class="parcel-text fade-up">
+      <div class="section-eyebrow" style="margin-bottom:16px;">
+        <div class="section-eyebrow-line" style="background:rgba(255,255,255,.3);"></div>
+        <span class="section-eyebrow-text" style="color:rgba(255,255,255,.5);">Before the first session</span>
       </div>
-      <div class="diff-card fade-up">
-        <div class="diff-icon">↗</div>
-        <div class="diff-title">High expectations, always</div>
-        <div class="diff-text">We welcome every level of ability. We do not lower the bar. We raise the child to meet it. That is the Lumina commitment.</div>
-      </div>
-      <div class="diff-card fade-up">
-        <div class="diff-icon">✦</div>
-        <div class="diff-title">Specialist-built workbooks</div>
-        <div class="diff-text">Every workbook and homework book your child receives has been designed by specialist teachers — not sourced, not borrowed. Crafted for this programme.</div>
-      </div>
-      <div class="diff-card fade-up">
-        <div class="diff-icon">⟲</div>
-        <div class="diff-title">The habit, not just the lesson</div>
-        <div class="diff-text">Homework books extend the learning into the week. Children don't just attend sessions — they build a daily relationship with reading and writing.</div>
-      </div>
-      <div class="diff-card fade-up">
-        <div class="diff-icon">◈</div>
-        <div class="diff-title">Independent, by design</div>
-        <div class="diff-text">Sessions are structured for children to work through their workbooks independently. The teacher supports — but the child leads. Every time.</div>
-      </div>
+      <h2>Something arrives.<br>Addressed to <em>your child.</em></h2>
+      <p>Before their first session, every Luminary receives a branded Lumina parcel in the post. Not an email. Not a PDF. A physical parcel, with their name on the box, delivered to their door.</p>
+      <p>Their workbook and homework book are sent directly to them — everything they need for the programme, ready before day one. What else is inside is for them to discover.</p>
+      <ul class="parcel-list">
+        <li>Specialist level workbook — built for this programme, matched to their level</li>
+        <li>Homework book — to embed every skill between sessions</li>
+        <li>The Lumina Passport — their permanent record of the journey</li>
+        <li>Everything else? That's the surprise.</li>
+      </ul>
     </div>
   </div>
 </section>
  
 <!-- WHAT YOU GET -->
-<section class="what">
+<section class="what" aria-label="What is included in the Lumina online English programme">
   <div class="what-header fade-up">
-    <div class="section-eyebrow" style="justify-content: center;">
+    <div class="section-eyebrow" style="justify-content:center;">
       <div class="section-eyebrow-line"></div>
       <span class="section-eyebrow-text">The studio experience</span>
       <div class="section-eyebrow-line"></div>
     </div>
     <h2>Two labs. One<br><em>complete education.</em></h2>
-    <p>Every week your child attends both a Reading Lab and a Writing Lab — each 45 minutes, each with a distinct purpose that feeds the other.</p>
+    <p>Every week your child attends a Reading Lab and a Writing Lab — each 45 minutes, each with a distinct purpose that feeds directly into the other. Two sessions a week. One complete education.</p>
   </div>
  
   <div class="labs">
     <div class="lab-card reading fade-up">
       <div class="lab-card-bg">RL</div>
-      <div class="lab-tag">Twice weekly</div>
-      <div class="lab-title">Reading Lab</div>
-      <p class="lab-desc">Deep comprehension work anchored to rich, knowledge-building passages. Children don't just read — they analyse, infer and interrogate text. As knowledge grows, so does the quality and depth of everything they write.</p>
-      <div class="lab-duration">45 minutes · Comprehension · Knowledge Building</div>
+      <div class="lab-tag">Once weekly · Online · 45 mins</div>
+      <h3 class="lab-title">Reading Lab — Online KS2 Reading Comprehension</h3>
+      <p class="lab-desc">Deep comprehension work anchored to rich, knowledge-building passages. Luminaries don't just read — they analyse, infer and interrogate text. As knowledge grows, so does the quality and depth of everything they write.</p>
+      <div class="lab-duration">Comprehension · Knowledge Building · KS2 Reading</div>
     </div>
     <div class="lab-card writing fade-up">
       <div class="lab-card-bg">WL</div>
-      <div class="lab-tag">Twice weekly</div>
-      <div class="lab-title">Writing Lab</div>
-      <p class="lab-desc">Structured writing sessions that move from sentence to paragraph to argument. Literary devices, register, precision and structure — taught systematically so children have the tools to turn their knowledge into powerful, purposeful writing.</p>
-      <div class="lab-duration">45 minutes · Structure · Literary Craft</div>
+      <div class="lab-tag">Once weekly · Online · 45 mins</div>
+      <h3 class="lab-title">Writing Lab — Online KS2 Writing Skills</h3>
+      <p class="lab-desc">Structured writing sessions that build from sentence to paragraph to argument. Literary devices, register, precision and structure — taught systematically so Luminaries can turn their knowledge into powerful, purposeful writing.</p>
+      <div class="lab-duration">Structure · Literary Craft · KS2 Writing</div>
     </div>
   </div>
  
-  <!-- ASSESSMENT STRIP -->
   <div class="assessment-strip fade-up">
-    <div class="assessment-header">
+    <div style="display:flex;justify-content:center;margin-bottom:20px;">
       <div class="section-eyebrow" style="margin-bottom:0;">
-        <div class="section-eyebrow-line"></div>
-        <span class="section-eyebrow-text">Progress & Reporting</span>
-        <div class="section-eyebrow-line"></div>
+        <div class="section-eyebrow-line" style="background:rgba(255,255,255,.3);"></div>
+        <span class="section-eyebrow-text" style="color:rgba(255,255,255,.4);">Progress & Reporting</span>
+        <div class="section-eyebrow-line" style="background:rgba(255,255,255,.3);"></div>
       </div>
     </div>
-    <h3 class="assessment-title">Two assessment points.<br><em>Full transparency, every time.</em></h3>
-    <p class="assessment-sub">At Week 6 and Week 12, every child completes a formal Big Write assessment — an independent piece of extended writing that draws on everything learned in the studio so far. Within a week of each assessment, parents receive a comprehensive written report.</p>
+    <h2 class="assessment-title">Two assessment points.<br><em>Full transparency, every time.</em></h3>
+    <p class="assessment-sub">At Week 6 and Week 12, every Luminary completes a formal Big Write — an independent extended piece that draws on everything learned so far. Within a week, parents receive a comprehensive written report. Posted, not emailed.</p>
     <div class="assessment-cards">
       <div class="assessment-card">
         <div class="assessment-week">Week 6</div>
         <div class="assessment-label">Mid-term Assessment</div>
-        <p class="assessment-desc">Halfway through the programme, your child completes their first Big Write. The report that follows gives you a clear picture of progress made, skills developing and where to focus for the second half of the term.</p>
+        <p class="assessment-desc">Halfway through the programme your child completes their first Big Write. The report that follows gives a clear picture of progress made, skills developing and where to focus for the second half.</p>
         <ul class="assessment-list">
           <li>Independent extended writing piece</li>
           <li>Teacher assessment against level criteria</li>
-          <li>Written strengths report</li>
+          <li>Written strengths report — posted home</li>
           <li>Identified areas for development</li>
         </ul>
       </div>
@@ -1103,42 +510,211 @@
       <div class="assessment-card">
         <div class="assessment-week">Week 12</div>
         <div class="assessment-label">End-of-Term Assessment</div>
-        <p class="assessment-desc">The final Big Write marks the close of the 12-week journey. The end-of-term report gives a complete view of the whole programme — how far your child has come, what they have mastered and what they are ready to tackle next.</p>
+        <p class="assessment-desc">The final Big Write marks the close of the 12-week journey. The report covers the full programme — how far your child has come, what they have mastered and what they are ready for next term.</p>
         <ul class="assessment-list">
           <li>Independent extended writing piece</li>
           <li>Full-programme progress review</li>
-          <li>Level recommendation for the next term</li>
-          <li>Personalised next steps</li>
+          <li>Level recommendation for next term</li>
+          <li>Personalised next steps — posted home</li>
         </ul>
       </div>
     </div>
     <div class="assessment-note">
       <span class="assessment-note-icon">✦</span>
-      All reports are written by your child's qualified teacher — not generated automatically. You will always know exactly where your child stands.
+      All reports are written by your child's qualified teacher — not generated automatically. Every parent will always know exactly where their child stands.
     </div>
   </div>
  
   <div class="inclusions fade-up">
-    <div class="inclusion">
-      <span class="inclusion-icon">📖</span>
-      <div class="inclusion-title">Level Workbook</div>
-      <div class="inclusion-desc">Specialist-designed, matched to your child's level. Theirs to keep.</div>
+    <div class="inclusion"><span class="inclusion-icon">📦</span><div class="inclusion-title">Welcome Parcel</div><div class="inclusion-desc">A named Lumina parcel posted before the first session. Workbook, homework book and a few surprises inside.</div></div>
+    <div class="inclusion"><span class="inclusion-icon">📖</span><div class="inclusion-title">Level Workbook</div><div class="inclusion-desc">Specialist-built, matched to your child's level — not their year group. Theirs to keep.</div></div>
+    <div class="inclusion"><span class="inclusion-icon">📝</span><div class="inclusion-title">Homework Book</div><div class="inclusion-desc">Weekly practice pages to embed every skill between sessions.</div></div>
+    <div class="inclusion"><span class="inclusion-icon">👩‍🏫</span><div class="inclusion-title">Qualified Teacher</div><div class="inclusion-desc">A specialist every session. Maximum 10 Luminaries — 1:1 time guaranteed.</div></div>
+    <div class="inclusion"><span class="inclusion-icon">🎯</span><div class="inclusion-title">Two Written Reports</div><div class="inclusion-desc">Formal assessments at Week 6 and 12. Written by your child's teacher. Posted home.</div></div>
+  </div>
+</section>
+ 
+<!-- PASSPORT -->
+<section class="passport-section" aria-label="The Lumina Passport">
+  <div class="passport-inner">
+    <div class="passport-visual fade-up">
+      <div class="passport-book">
+        <div class="passport-emblem">✦</div>
+        <div class="passport-name">LUMINA</div>
+        <div class="passport-sub-text">The Luminary Passport</div>
+        <div class="passport-dots">
+          <div class="p-dot lit"></div><div class="p-dot lit"></div><div class="p-dot lit"></div><div class="p-dot"></div><div class="p-dot"></div>
+        </div>
+      </div>
     </div>
-    <div class="inclusion">
-      <span class="inclusion-icon">📝</span>
-      <div class="inclusion-title">Homework Book</div>
-      <div class="inclusion-desc">Weekly practice pages to embed every skill between sessions.</div>
+    <div class="passport-text fade-up">
+      <div class="section-eyebrow" style="margin-bottom:16px;">
+        <div class="section-eyebrow-line"></div>
+        <span class="section-eyebrow-text">The journey made visible</span>
+      </div>
+      <h2>The Lumina<br><em>Passport.</em></h2>
+      <p>Every Luminary receives a physical passport in their welcome parcel. It travels with them through all five levels — with a personal card and stamp posted home after every Big Write assessment, marking exactly where they are and how far they've come.</p>
+      <p>This is not a certificate at the end. It is a living record of becoming. Something that arrives through the letterbox, that a child keeps, shows and is proud of long after the programme ends.</p>
+      <ul class="passport-features">
+        <li>Arrives in the welcome parcel before the first session</li>
+        <li>Personal card and stamp posted home after every Big Write</li>
+        <li>Each level completion formally marked and recorded</li>
+        <li>Five levels — a journey that builds over years</li>
+        <li>Theirs to keep, permanently</li>
+      </ul>
     </div>
-    <div class="inclusion">
-      <span class="inclusion-icon">👩‍🏫</span>
-      <div class="inclusion-title">Qualified Teacher</div>
-      <div class="inclusion-desc">A specialist present in every session — 10 children maximum.</div>
+  </div>
+</section>
+ 
+<!-- VALUE LADDER -->
+<section style="background:var(--cream);padding:100px 60px;border-top:1px solid var(--sand);">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div class="section-eyebrow fade-up">
+      <div class="section-eyebrow-line"></div>
+      <span class="section-eyebrow-text">What £600 actually buys</span>
     </div>
-    <div class="inclusion">
-      <span class="inclusion-icon">🎯</span>
-      <div class="inclusion-title">12-Week Programme</div>
-      <div class="inclusion-desc">Two formal assessment points at Week 6 and Week 12. After each, parents receive a written report covering progress, strengths and next steps.</div>
+    <h2 class="fade-up" style="font-size:clamp(2rem,4vw,3rem);font-weight:600;color:var(--navy);line-height:1.1;margin-bottom:16px;max-width:640px;">Every element of this online English programme has a value.<br><em>Together, they are exceptional.</em></h2>
+    <p class="fade-up" style="font-size:.95rem;line-height:1.75;color:var(--mid);font-weight:300;max-width:580px;margin-bottom:60px;">Lumina has been built so that every single element of the programme contributes something real. Here is what you are actually investing in — and what each element would cost if you tried to source it elsewhere.</p>
+ 
+    <div class="fade-up" style="display:flex;flex-direction:column;gap:2px;margin-bottom:40px;">
+ 
+      <!-- Row header -->
+      <div style="display:grid;grid-template-columns:1fr 140px 140px;gap:0;">
+        <div style="padding:10px 20px;background:var(--navy);border-radius:2px 0 0 0;">
+          <span style="font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);">What you receive</span>
+        </div>
+        <div style="padding:10px 20px;background:var(--navy);text-align:center;">
+          <span style="font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.5);">Market value</span>
+        </div>
+        <div style="padding:10px 20px;background:var(--teal);text-align:center;border-radius:0 2px 0 0;">
+          <span style="font-size:.68rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.9);">Lumina</span>
+        </div>
+      </div>
+ 
+      <!-- Rows -->
+      <div style="display:grid;grid-template-columns:1fr 140px 140px;">
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;">
+          <h3 style="font-size:.88rem;font-weight:500;color:var(--navy);margin-bottom:4px;font-family:'DM Sans',sans-serif;">24 × 45-minute online English sessions with a qualified teacher</h3>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;">Reading Lab + Writing Lab across 12 weeks. Maximum 10 children — genuine 1:1 time every session.</div>
+        </div>
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+          <div style="font-size:.72rem;color:var(--mid);font-weight:300;text-decoration:line-through;">£35–£60/hr</div>
+          <div style="font-size:.8rem;color:var(--mid);font-weight:300;margin-top:2px;">≈ £420–£720</div>
+        </div>
+        <div style="padding:18px 20px;background:var(--light);border:1px solid var(--teal);border-top:none;display:flex;align-items:center;justify-content:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--teal);">Included</span>
+        </div>
+      </div>
+ 
+      <div style="display:grid;grid-template-columns:1fr 140px 140px;">
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;">
+          <h3 style="font-size:.88rem;font-weight:500;color:var(--navy);margin-bottom:4px;font-family:'DM Sans',sans-serif;">Specialist-built primary English workbook</h3>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;">Designed from scratch by specialist teachers. Matched to your child's exact level, not their year group. Theirs to keep.</div>
+        </div>
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+          <div style="font-size:.72rem;color:var(--mid);font-weight:300;text-decoration:line-through;">£40–£80</div>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;margin-top:2px;">if available</div>
+        </div>
+        <div style="padding:18px 20px;background:var(--light);border:1px solid var(--teal);border-top:none;display:flex;align-items:center;justify-content:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--teal);">Included</span>
+        </div>
+      </div>
+ 
+      <div style="display:grid;grid-template-columns:1fr 140px 140px;">
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;">
+          <h3 style="font-size:.88rem;font-weight:500;color:var(--navy);margin-bottom:4px;font-family:'DM Sans',sans-serif;">12-week English homework book</h3>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;">One page per week, skill-matched, extending the learning between every session. Sent directly to your door.</div>
+        </div>
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+          <div style="font-size:.72rem;color:var(--mid);font-weight:300;text-decoration:line-through;">£20–£40</div>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;margin-top:2px;">if available</div>
+        </div>
+        <div style="padding:18px 20px;background:var(--light);border:1px solid var(--teal);border-top:none;display:flex;align-items:center;justify-content:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--teal);">Included</span>
+        </div>
+      </div>
+ 
+      <div style="display:grid;grid-template-columns:1fr 140px 140px;">
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;">
+          <h3 style="font-size:.88rem;font-weight:500;color:var(--navy);margin-bottom:4px;font-family:'DM Sans',sans-serif;">Two formal written English assessment reports</h3>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;">Week 6 and Week 12. Written by a qualified teacher. Covering progress, strengths, areas to develop and next steps. Posted home.</div>
+        </div>
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+          <div style="font-size:.72rem;color:var(--mid);font-weight:300;text-decoration:line-through;">£60–£100</div>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;margin-top:2px;">per report</div>
+        </div>
+        <div style="padding:18px 20px;background:var(--light);border:1px solid var(--teal);border-top:none;display:flex;align-items:center;justify-content:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--teal);">Included</span>
+        </div>
+      </div>
+ 
+      <div style="display:grid;grid-template-columns:1fr 140px 140px;">
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;">
+          <h3 style="font-size:.88rem;font-weight:500;color:var(--navy);margin-bottom:4px;font-family:'DM Sans',sans-serif;">The Lumina Passport — a record of your child's English journey</h3>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;">A physical record of your child's entire Lumina journey. Stamped and updated after every assessment. Cannot be bought. Cannot be replicated.</div>
+        </div>
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;font-style:italic;">Exclusive to Lumina</div>
+        </div>
+        <div style="padding:18px 20px;background:var(--light);border:1px solid var(--teal);border-top:none;display:flex;align-items:center;justify-content:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--teal);">Included</span>
+        </div>
+      </div>
+ 
+      <div style="display:grid;grid-template-columns:1fr 140px 140px;">
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;border-bottom:none;">
+          <h3 style="font-size:.88rem;font-weight:500;color:var(--navy);margin-bottom:4px;font-family:'DM Sans',sans-serif;">Welcome parcel — posted to your child before their first English session</h3>
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;">A branded Lumina parcel, addressed to your child, arriving before their first session. Everything they need to begin — and a few surprises inside.</div>
+        </div>
+        <div style="padding:18px 20px;background:white;border:1px solid var(--sand);border-right:none;border-top:none;border-bottom:none;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+          <div style="font-size:.78rem;color:var(--mid);font-weight:300;font-style:italic;">Exclusive to Lumina</div>
+        </div>
+        <div style="padding:18px 20px;background:var(--light);border:1px solid var(--teal);border-top:none;border-bottom:none;display:flex;align-items:center;justify-content:center;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;color:var(--teal);">Included</span>
+        </div>
+      </div>
+ 
+      <!-- Total row -->
+      <div style="display:grid;grid-template-columns:1fr 140px 140px;">
+        <div style="padding:20px 20px;background:var(--navy);display:flex;align-items:center;">
+          <span style="font-size:.82rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.7);">Total market value</span>
+        </div>
+        <div style="padding:20px 20px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;border-left:1px solid rgba(255,255,255,.1);">
+          <div style="font-size:.72rem;color:rgba(255,255,255,.4);font-weight:300;text-decoration:line-through;margin-bottom:2px;">£700–£1,100+</div>
+          <div style="font-size:.78rem;color:rgba(255,255,255,.5);font-weight:300;">sourced separately</div>
+        </div>
+        <div style="padding:20px 20px;background:var(--teal);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+          <div style="font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:4px;">Lumina price</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:white;line-height:1;">£600</div>
+        </div>
+      </div>
+ 
     </div>
+ 
+    <!-- Value statement -->
+    <div class="fade-up" style="background:var(--navy);padding:32px 40px;display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;">The Lumina price</div>
+        <div style="display:flex;align-items:flex-end;gap:4px;">
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;color:var(--teal);margin-bottom:6px;">£</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:700;color:white;line-height:1;">600</span>
+          <span style="font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:8px;margin-left:4px;">per 12-week programme</span>
+        </div>
+      </div>
+      <div style="width:1px;height:60px;background:rgba(255,255,255,.1);flex-shrink:0;"></div>
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:8px;">Paid as</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:white;margin-bottom:4px;">3 × £200 monthly</div>
+        <div style="font-size:.78rem;color:rgba(255,255,255,.4);font-weight:300;">instalments — no lump sum required</div>
+      </div>
+      <div style="width:1px;height:60px;background:rgba(255,255,255,.1);flex-shrink:0;"></div>
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:8px;">Re-enrolment</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:white;margin-bottom:4px;">By invitation</div>
+        <div style="font-size:.78rem;color:rgba(255,255,255,.4);font-weight:300;">offered at Week 12 — based on your child's progress report</div>
+      </div>
+    </div>
+ 
   </div>
 </section>
  
@@ -1151,80 +727,66 @@
         <span class="section-eyebrow-text">Investment</span>
       </div>
       <h2>Try it first.<br><em>No commitment.</em></h2>
-      <p>Your child's first session is completely free. They experience the studio, the workbook and the labs in full — exactly as it would be every week. <strong style="color:var(--navy);">Only if you're happy do you enrol.</strong> No pressure, no invoice, no awkward conversation.</p>
-      <div class="taster-badge" style="margin-bottom:16px;">
+      <p>Your child's first session is completely free. They experience the studio, their workbook and both labs in full — exactly as every week would be. <strong style="color:var(--navy);">Only if you're happy do you enrol.</strong> No pressure, no invoice, no awkward conversation.</p>
+      <div class="taster-badge">
         <span class="taster-badge-label">Taster Session</span>
         <span class="taster-badge-value">Free</span>
       </div>
-      <p style="font-size:0.82rem;color:var(--mid);line-height:1.6;font-weight:300;">The £200/month programme only begins once you've experienced the studio and decided it's right for your child.</p>
+      <p style="font-size:.82rem;color:var(--mid);line-height:1.6;font-weight:300;margin-top:16px;">The programme begins only once you've experienced the studio and decided Lumina is right for your child.</p>
     </div>
- 
     <div class="pricing-right fade-up">
       <div style="display:flex;gap:0;margin-bottom:28px;">
-        <div style="flex:1;background:rgba(42,171,184,0.15);border:1px solid rgba(42,171,184,0.4);padding:14px 16px;border-right:none;">
-          <div style="font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);margin-bottom:4px;">Step 1</div>
-          <div style="font-size:0.88rem;font-weight:500;color:var(--white);">Free taster session</div>
-          <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:2px;">No payment. No obligation.</div>
+        <div style="flex:1;background:rgba(42,171,184,.15);border:1px solid rgba(42,171,184,.4);padding:14px 16px;border-right:none;">
+          <div style="font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:4px;">Step 1</div>
+          <div style="font-size:.88rem;font-weight:500;color:var(--white);">Free taster session</div>
+          <div style="font-size:.75rem;color:rgba(255,255,255,.4);margin-top:2px;">No payment. No obligation.</div>
         </div>
-        <div style="flex:1;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);padding:14px 16px;">
-          <div style="font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:4px;">Step 2 — if you're happy</div>
-          <div style="font-size:0.88rem;font-weight:500;color:var(--white);">Enrol in the programme</div>
-          <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:2px;">£200/month · 12 weeks</div>
+        <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);padding:14px 16px;">
+          <div style="font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px;">Step 2 — if you're happy</div>
+          <div style="font-size:.88rem;font-weight:500;color:var(--white);">Enrol in the programme</div>
+          <div style="font-size:.75rem;color:rgba(255,255,255,.4);margin-top:2px;">£600 total · paid £200/month</div>
         </div>
       </div>
-      <div class="price-display">
-        <span class="price-currency">£</span>
-        <span class="price-amount">200</span>
+      <div style="margin-bottom:6px;">
+        <div style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:6px;">Monthly instalment</div>
+        <div class="price-display">
+          <span class="price-currency">£</span>
+          <span class="price-amount">200</span>
+        </div>
       </div>
-      <div class="price-period">per month · 12-week programme</div>
+      <div class="price-period">× 3 monthly payments = £600 per 12-week programme</div>
       <div class="price-breakdown">
-        <div class="price-line">
-          <span class="price-line-label">Sessions per week</span>
-          <span class="price-line-val">2 (Reading + Writing)</span>
-        </div>
-        <div class="price-line">
-          <span class="price-line-label">Session duration</span>
-          <span class="price-line-val">45 minutes each</span>
-        </div>
-        <div class="price-line">
-          <span class="price-line-label">Maximum group size</span>
-          <span class="price-line-val">10 children</span>
-        </div>
-        <div class="price-line">
-          <span class="price-line-label">Workbook + Homework book</span>
-          <span class="price-line-val">Included</span>
-        </div>
-        <div class="price-line">
-          <span class="price-line-label">Qualified teacher</span>
-          <span class="price-line-val">Every session</span>
+        <div class="price-line"><span class="price-line-label">Sessions</span><span class="price-line-val">24 total · Reading Lab + Writing Lab</span></div>
+        <div class="price-line"><span class="price-line-label">Per session cost</span><span class="price-line-val">£25 · qualified teacher · max 10</span></div>
+        <div class="price-line"><span class="price-line-label">Welcome parcel</span><span class="price-line-val">Included — posted before day one</span></div>
+        <div class="price-line"><span class="price-line-label">Workbook + Homework book</span><span class="price-line-val">Included</span></div>
+        <div class="price-line"><span class="price-line-label">Lumina Passport</span><span class="price-line-val">Included</span></div>
+        <div class="price-line"><span class="price-line-label">Two written reports</span><span class="price-line-val">Week 6 + Week 12 · Posted</span></div>
+        <div class="price-line" style="border-top:1px solid rgba(255,255,255,.1);padding-top:12px;margin-top:4px;">
+          <span class="price-line-label" style="color:var(--teal);">Re-enrolment</span>
+          <span class="price-line-val" style="color:var(--teal);">By invitation at Week 12</span>
         </div>
       </div>
       <div class="spaces-bar">
-        <div class="spaces-bar-label">
-          <span>Spaces remaining</span>
-          <span id="spaces-count">10 of 10</span>
-        </div>
-        <div class="spaces-bar-track">
-          <div class="spaces-bar-fill" id="spaces-fill"></div>
-        </div>
+        <div class="spaces-bar-label"><span>Spaces in first cohort</span><span id="spaces-count">10 available</span></div>
+        <div class="spaces-bar-track"><div class="spaces-bar-fill" id="spaces-fill"></div></div>
       </div>
       <a href="#waitlist" class="btn-primary" style="display:block;text-align:center;width:100%;">Reserve Your Child's Place</a>
     </div>
   </div>
 </section>
  
-<!-- WAITLIST FORM -->
-<section id="waitlist">
+<!-- WAITLIST -->
+<section id="waitlist" aria-label="Join the Lumina Studios waiting list">
   <div class="waitlist-inner">
-    <div class="section-eyebrow" style="justify-content: center; margin-bottom: 20px;">
-      <div class="section-eyebrow-line"></div>
-      <span class="section-eyebrow-text">Gravesend, Kent &nbsp;·&nbsp; 10 spaces only &nbsp;·&nbsp; Summer 2026</span>
-      <div class="section-eyebrow-line"></div>
+    <div class="section-eyebrow" style="justify-content:center;margin-bottom:20px;">
+      <div class="section-eyebrow-line" style="background:rgba(255,255,255,.3);"></div>
+      <span class="section-eyebrow-text" style="color:rgba(255,255,255,.4);">Online · UK-wide · Summer 2026 · 10 spaces per cohort</span>
+      <div class="section-eyebrow-line" style="background:rgba(255,255,255,.3);"></div>
     </div>
-    <h2>Join the<br><em>waiting list.</em></h2>
-    <p>Register your interest and we'll arrange your child's <strong style="color:var(--teal);">free taster session</strong> ahead of our Summer 2026 opening. You only decide whether to enrol once you've seen the studio in action. No payment is taken at any point until you choose to join.</p>
+    <h2>Become a<br><em>Luminary.</em></h2>
+    <p>Register your interest today. We'll be in touch to arrange your child's <strong style="color:var(--teal);">free taster session</strong> ahead of our Summer 2026 opening. No payment is taken until you've experienced the studio and chosen to join.</p>
  
-    <!-- Brevo Form -->
     <div id="sib-form-container" class="sib-form-container">
       <div id="error-message" class="sib-form-message-panel sib-lumina-error">
         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
@@ -1235,12 +797,11 @@
       <div id="success-message" class="sib-form-message-panel sib-lumina-success">
         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
           <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/></svg>
-          <span class="sib-form-message-panel__inner-text">You're on the list. We'll be in touch to arrange your free taster session.</span>
+          <span class="sib-form-message-panel__inner-text">Welcome to Lumina. We'll be in touch to arrange your free taster session.</span>
         </div>
       </div>
  
       <form id="sib-form" method="POST" action="https://04a36ecb.sibforms.com/serve/MUIFADqv2o2irlMO68Cs48jkpo0rckYYGXaa3KoByD66euHG6c_pbhdi96V10ao6d4FpmZhLmHaqb4Mc3fhVrvkT7tXo8PUS8x6oRRNwNn0v3hu_2h1n-wkkg669yHephooHhzdQBuirDIeC3bXc4cyajQxlN0NZeyNKAfIqqDX5qDswAUoinHZDh-l45VaL-Os2sfWi241PecUnkw==" data-type="subscription" class="lumina-brevo-form">
- 
         <div class="lumina-form-row">
           <div class="lumina-form-group">
             <label class="form-label" for="FIRSTNAME">Your first name</label>
@@ -1253,7 +814,6 @@
             <label class="entry__error entry__error--primary lumina-field-error"></label>
           </div>
         </div>
- 
         <div class="lumina-form-row">
           <div class="lumina-form-group">
             <label class="form-label" for="EMAIL">Email address</label>
@@ -1269,15 +829,12 @@
                 <option value="+353">+353 IE</option>
                 <option value="+61">+61 AU</option>
                 <option value="+64">+64 NZ</option>
-                <option value="+27">+27 ZA</option>
-                <option value="+91">+91 IN</option>
               </select>
               <input type="tel" class="form-input lumina-sms-input" id="SMS" name="SMS" autocomplete="off" placeholder="07700 000000" data-required="true" required />
             </div>
             <label class="entry__error entry__error--secondary lumina-field-error"></label>
           </div>
         </div>
- 
         <div class="lumina-form-row">
           <div class="lumina-form-group">
             <label class="form-label" for="CHILDSNAME">Child's first name</label>
@@ -1290,10 +847,8 @@
             <label class="entry__error entry__error--primary lumina-field-error"></label>
           </div>
         </div>
- 
         <input type="text" name="email_address_check" value="" class="input--hidden" style="display:none;">
         <input type="hidden" name="locale" value="en">
- 
         <button type="submit" class="form-submit" form="sib-form">
           <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" style="width:16px;height:16px;margin-right:8px;vertical-align:middle;"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
           Book Your Free Taster Session
@@ -1304,53 +859,33 @@
   </div>
 </section>
  
-<!-- FOOTER -->
 <footer>
   <div class="footer-logo">Lumina<span>.</span></div>
-  <div class="footer-text">Gravesend, Kent &nbsp;·&nbsp; Ages 7–11 &nbsp;·&nbsp; English Tuition &nbsp;·&nbsp; Reading Lab &nbsp;·&nbsp; Writing Lab</div>
-  <div class="footer-text">© 2026 Lumina Studios &nbsp;·&nbsp; <a href="https://luminastudio.uk" style="color:rgba(255,255,255,0.3);text-decoration:none;">luminastudio.uk</a></div>
+  <div class="footer-text">Online English Learning Studio &nbsp;·&nbsp; Ages 7–11 &nbsp;·&nbsp; UK-wide &nbsp;·&nbsp; Reading Lab &nbsp;·&nbsp; Writing Lab</div>
+  <div class="footer-text">© 2026 Lumina Studios &nbsp;·&nbsp; <a href="https://luminastudio.uk" style="color:rgba(255,255,255,.3);text-decoration:none;">luminastudio.uk</a></div>
 </footer>
  
-<!-- SEO location signal — screen-reader and crawler visible, visually hidden -->
 <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
-  Lumina Studios offers specialist English tuition for children aged 7 to 11 in Gravesend, Kent.
-  We serve families in Gravesend, Northfleet, Gravesham, Dartford and surrounding areas in Kent.
-  Our English tutoring programme includes a Reading Lab and Writing Lab, with a maximum of 10 children per group.
-  A free taster session is available before any commitment to our 12-week programme.
-  Lumina Studios is opening in Gravesend in Summer 2026.
+  Lumina Studios is a premium online English tuition programme for primary school children aged 7 to 11 across the United Kingdom.
+  We offer online reading tuition and online writing tuition for KS2 children in Year 2, Year 3, Year 4, Year 5 and Year 6.
+  Our online English tutoring programme includes a Reading Lab for comprehension and knowledge building, and a Writing Lab for literary skills and writing structure.
+  Maximum 10 children per cohort. Qualified teacher every session. Specialist workbooks built by experienced teachers and posted to your door.
+  Free taster session available. Opening Summer 2026. Online primary English tuition UK. KS2 English tuition online.
 </div>
  
 <script>
-  // ── Scroll-triggered fade-ins
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
   }, { threshold: 0.15 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
  
-  // ── Spaces bar animation
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      document.getElementById('spaces-fill').style.width = '0%';
-    }, 600);
-  });
+  window.addEventListener('load', () => { setTimeout(() => { document.getElementById('spaces-fill').style.width = '0%'; }, 600); });
  
-  // ── Stat block hero animation
   document.querySelectorAll('.stat-block').forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    setTimeout(() => {
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      el.style.opacity = '1';
-      el.style.transform = 'translateY(0)';
-    }, 400 + i * 180);
+    el.style.opacity = '0'; el.style.transform = 'translateY(20px)';
+    setTimeout(() => { el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'; el.style.opacity = '1'; el.style.transform = 'translateY(0)'; }, 400 + i * 180);
   });
  
-  // ── Brevo config
   window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
   window.LOCALE = 'en';
   window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Please check this field and try again.";
