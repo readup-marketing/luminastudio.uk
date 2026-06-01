@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lumina Studios | Online English Tuition for Primary School Children | Ages 7–11</title>
-<meta name="description" content="Lumina Studios is a premium online English learning studio for children aged 7–11. Reading Lab and Writing Lab, maximum 10 children per cohort, qualified teacher every session. Free taster session — Summer 2026.">
+<title>Lumina Studios | Premium Online English Tuition for Children Ages 7–11</title>
+<meta name="description" content="Lumina Studios is a premium online English learning studio for children aged 7–11. Free taster session with workbook posted to your door. Reading Lab and Writing Lab, maximum 10 children per cohort, qualified teacher every session.">
 <meta name="keywords" content="online English tuition primary school, English tutor children ages 7-11, online reading tutor primary, online writing tutor KS2, primary English programme UK, KS2 English tutoring online, reading comprehension tutor UK, writing skills children online, Year 3 Year 4 Year 5 Year 6 English tuition">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://luminastudio.uk">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://luminastudio.uk">
 <meta property="og:title" content="Lumina Studios | Premium Online English Tuition for Children Ages 7–11">
-<meta property="og:description" content="Not tutoring. A studio. Free taster session available. Opening Summer 2026.">
+<meta property="og:description" content="Not tutoring. A studio. Free taster session with workbook posted to your door.">
 <meta property="og:site_name" content="Lumina Studios">
 <script type="application/ld+json">
 {
@@ -22,7 +22,6 @@
   "url": "https://luminastudio.uk",
   "areaServed": "United Kingdom",
   "audience": { "@type": "EducationalAudience", "educationalRole": "student", "audienceType": "Primary school children aged 7 to 11, KS2" },
-  "openingDate": "2026-06-01",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Lumina Studios",
@@ -127,9 +126,15 @@ nav{
   font-size:clamp(1rem,2vw,1.15rem);
   font-weight:300;line-height:1.8;
   color:rgba(255,255,255,.6);
-  max-width:580px;margin:0 auto 48px;
+  max-width:580px;margin:0 auto 20px;
 }
 .hero-statement strong{color:var(--white);font-weight:400}
+ 
+.hero-urgency{
+  font-size:.82rem;color:var(--teal);font-weight:400;
+  margin-bottom:48px;letter-spacing:.03em;
+  max-width:480px;margin-left:auto;margin-right:auto;
+}
  
 /* ── TASTER CTA BLOCK ── */
 .taster-cta{
@@ -177,47 +182,130 @@ nav{
 .fact-n span{color:rgba(255,255,255,.4);font-size:1.8rem}
 .fact-label{font-size:.72rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);line-height:1.5}
  
-/* ── NOT TUTORING ── */
-.not-tutoring{
+/* ── PROBLEM SECTION ── */
+.problem{
   padding:100px 60px;
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:80px;align-items:center;
-  max-width:1100px;margin:0 auto;
+  max-width:900px;margin:0 auto;
 }
-.nt-left h2{
+.problem-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.problem h2{
   font-size:clamp(2.2rem,4vw,3.4rem);
   font-weight:400;line-height:1.1;
-  color:var(--white);margin-bottom:24px;
+  color:var(--white);margin-bottom:28px;
 }
-.nt-left h2 em{font-style:italic;color:var(--teal)}
-.nt-left p{
+.problem h2 em{font-style:italic;color:var(--teal)}
+.problem p{
   font-size:1rem;line-height:1.8;
   color:rgba(255,255,255,.5);font-weight:300;
-  margin-bottom:16px;max-width:440px;
+  margin-bottom:16px;max-width:560px;
 }
-.nt-right{display:flex;flex-direction:column;gap:2px}
-.nt-card{
-  padding:24px 28px;
+.problem p strong{color:var(--white);font-weight:400}
+ 
+/* ── TASTER JOURNEY ── */
+.journey{
+  border-top:1px solid rgba(42,171,184,.15);
+  border-bottom:1px solid rgba(42,171,184,.15);
+  padding:100px 60px;
+  max-width:1100px;margin:0 auto;
+}
+.journey-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.journey h2{
+  font-size:clamp(2.2rem,4vw,3.2rem);
+  font-weight:400;line-height:1.1;
+  color:var(--white);margin-bottom:48px;
+}
+.journey h2 em{font-style:italic;color:var(--teal)}
+.journey-steps{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+  position:relative;
+}
+.journey-steps::before{
+  content:'';position:absolute;top:28px;left:10%;right:10%;
+  height:1px;background:rgba(42,171,184,.2);
+}
+.journey-step{text-align:center;padding:0 16px;position:relative}
+.journey-step-n{
+  width:56px;height:56px;border-radius:50%;
+  background:var(--dark);border:1px solid rgba(42,171,184,.4);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 20px;position:relative;z-index:2;
+  font-family:'Cormorant Garamond',serif;font-size:1.4rem;
+  font-weight:600;color:var(--teal);
+}
+.journey-step h3{
+  font-family:'DM Sans',sans-serif;font-size:.78rem;
+  font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:10px;
+}
+.journey-step p{
+  font-size:.85rem;line-height:1.65;
+  color:rgba(255,255,255,.45);font-weight:300;
+}
+ 
+/* ── VALUE STACK ── */
+.value-stack{
+  padding:100px 60px;
+  max-width:1100px;margin:0 auto;
+}
+.vs-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.value-stack h2{
+  font-size:clamp(2.2rem,4vw,3.4rem);
+  font-weight:400;line-height:1.1;
+  color:var(--white);margin-bottom:48px;
+}
+.value-stack h2 em{font-style:italic;color:var(--teal)}
+.vs-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:2px;
+}
+.vs-card{
+  padding:28px 28px;
   background:rgba(255,255,255,.03);
   border:1px solid rgba(255,255,255,.07);
   transition:border-color .25s,background .25s;
   position:relative;
 }
-.nt-card::before{
+.vs-card::before{
   content:'';position:absolute;left:0;top:0;bottom:0;
   width:2px;background:var(--teal);
   transform:scaleY(0);transform-origin:bottom;
   transition:transform .3s ease;
 }
-.nt-card:hover{border-color:rgba(42,171,184,.3);background:rgba(42,171,184,.04)}
-.nt-card:hover::before{transform:scaleY(1)}
-.nt-card h3{font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
-.nt-card p{font-size:.88rem;line-height:1.65;color:rgba(255,255,255,.5);font-weight:300}
+.vs-card:hover{border-color:rgba(42,171,184,.3);background:rgba(42,171,184,.04)}
+.vs-card:hover::before{transform:scaleY(1)}
+.vs-card h3{font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+.vs-card p{font-size:.88rem;line-height:1.65;color:rgba(255,255,255,.5);font-weight:300}
+ 
+/* ── FOUNDER ── */
+.founder{
+  border-top:1px solid rgba(42,171,184,.15);
+  border-bottom:1px solid rgba(42,171,184,.15);
+  padding:100px 60px;
+  max-width:900px;margin:0 auto;
+  display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:start;
+}
+.founder-initial{
+  width:80px;height:80px;border-radius:50%;
+  background:rgba(42,171,184,.12);border:1px solid rgba(42,171,184,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-size:2.4rem;
+  font-weight:700;color:var(--teal);
+}
+.founder-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.founder h2{
+  font-size:clamp(1.8rem,3vw,2.6rem);
+  font-weight:400;line-height:1.15;
+  color:var(--white);margin-bottom:20px;
+}
+.founder h2 em{font-style:italic;color:var(--teal)}
+.founder p{
+  font-size:.95rem;line-height:1.8;
+  color:rgba(255,255,255,.5);font-weight:300;
+  margin-bottom:14px;
+}
+.founder p strong{color:var(--white);font-weight:400}
  
 /* ── PRICING ── */
 .pricing-section{
-  border-top:1px solid rgba(42,171,184,.1);
-  border-bottom:1px solid rgba(42,171,184,.1);
   padding:100px 60px;
 }
 .pricing-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
@@ -228,7 +316,8 @@ nav{
   line-height:1.15;margin-bottom:20px;
 }
 .pricing-left h2 em{font-style:italic;color:var(--teal)}
-.pricing-left p{font-size:.95rem;line-height:1.75;color:rgba(255,255,255,.5);font-weight:300;margin-bottom:20px}
+.pricing-left p{font-size:.95rem;line-height:1.75;color:rgba(255,255,255,.5);font-weight:300;margin-bottom:16px}
+.pricing-left p strong{color:var(--white);font-weight:400}
  
 .taster-pill{
   display:inline-flex;align-items:center;gap:10px;
@@ -254,12 +343,6 @@ nav{
 .price-detail{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.7;border-top:1px solid rgba(255,255,255,.07);padding-top:20px;margin-bottom:28px}
 .price-detail strong{color:rgba(255,255,255,.7);font-weight:400}
  
-.spaces-bar{margin-bottom:24px}
-.spaces-bar-top{display:flex;justify-content:space-between;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;color:rgba(255,255,255,.35)}
-.spaces-bar-top span:last-child{color:var(--teal)}
-.spaces-bar-track{height:3px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden}
-.spaces-bar-fill{height:100%;width:0%;background:var(--teal);border-radius:2px;transition:width 1.5s ease .5s}
- 
 .price-btn{
   display:block;width:100%;text-align:center;
   background:var(--teal);color:var(--white);
@@ -270,30 +353,61 @@ nav{
 }
 .price-btn:hover{background:var(--white);color:var(--navy);transform:translateY(-2px)}
  
-/* ── WAITLIST ── */
-#waitlist{
+/* ── FAQ ── */
+.faq{
+  border-top:1px solid rgba(42,171,184,.15);
+  padding:100px 60px;
+  max-width:700px;margin:0 auto;
+}
+.faq-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.faq h2{
+  font-size:clamp(2rem,3.5vw,2.8rem);
+  font-weight:400;color:var(--white);
+  line-height:1.15;margin-bottom:48px;
+}
+.faq h2 em{font-style:italic;color:var(--teal)}
+.faq-item{
+  border-bottom:1px solid rgba(255,255,255,.08);
+  padding:24px 0;
+}
+.faq-q{
+  font-size:1rem;font-weight:500;color:var(--white);
+  margin-bottom:10px;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.faq-q::after{content:'+';font-size:1.2rem;color:var(--teal);transition:transform .2s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{
+  font-size:.9rem;line-height:1.75;
+  color:rgba(255,255,255,.45);font-weight:300;
+  max-height:0;overflow:hidden;transition:max-height .3s ease;
+}
+.faq-item.open .faq-a{max-height:300px}
+ 
+/* ── BOOKING FORM ── */
+#book{
   padding:100px 60px;
   position:relative;overflow:hidden;
 }
-#waitlist::before{
+#book::before{
   content:'';position:absolute;top:-200px;right:-200px;
   width:600px;height:600px;border-radius:50%;
   background:radial-gradient(circle,rgba(42,171,184,.08) 0%,transparent 70%);
   pointer-events:none;
 }
-.waitlist-inner{max-width:580px;margin:0 auto;position:relative;z-index:2;text-align:center}
+.book-inner{max-width:580px;margin:0 auto;position:relative;z-index:2;text-align:center}
  
-.wl-eyebrow{display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:20px}
-.wl-eyebrow-line{width:24px;height:1px;background:rgba(42,171,184,.4)}
-.wl-eyebrow-text{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.book-eyebrow{display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:20px}
+.book-eyebrow-line{width:24px;height:1px;background:rgba(42,171,184,.4)}
+.book-eyebrow-text{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
  
-.waitlist-inner h2{
+.book-inner h2{
   font-size:clamp(2.2rem,4vw,3.4rem);
   font-weight:400;color:var(--white);
   line-height:1.1;margin-bottom:16px;
 }
-.waitlist-inner h2 em{font-style:italic;color:var(--teal)}
-.waitlist-inner > p{
+.book-inner h2 em{font-style:italic;color:var(--teal)}
+.book-inner > p{
   font-size:.92rem;line-height:1.75;
   color:rgba(255,255,255,.45);font-weight:300;
   margin-bottom:44px;
@@ -344,10 +458,20 @@ footer{
   .hero{padding:100px 24px 60px}
   .facts{grid-template-columns:1fr 1fr}
   .fact{border-bottom:1px solid rgba(42,171,184,.1)}
-  .not-tutoring{grid-template-columns:1fr;padding:80px 24px;gap:48px}
+  .problem{padding:80px 24px}
+  .journey{padding:80px 24px}
+  .journey-steps{grid-template-columns:1fr;gap:32px}
+  .journey-steps::before{display:none}
+  .journey-step{text-align:left;padding:0}
+  .journey-step-n{margin:0 0 12px 0}
+  .value-stack{padding:80px 24px}
+  .vs-grid{grid-template-columns:1fr}
+  .founder{padding:80px 24px;grid-template-columns:1fr;gap:24px}
+  .founder-initial{width:64px;height:64px;font-size:1.8rem}
   .pricing-section{padding:80px 24px}
   .pricing-inner{grid-template-columns:1fr}
-  #waitlist{padding:80px 24px}
+  .faq{padding:80px 24px}
+  #book{padding:80px 24px}
   footer{padding:28px 24px;flex-direction:column;text-align:center}
   .lumina-form-row{grid-template-columns:1fr}
 }
@@ -359,7 +483,7 @@ footer{
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Lumina<span>.</span></div>
-  <a href="#waitlist" class="nav-cta">Book Free Taster</a>
+  <a href="#book" class="nav-cta">Book Free Taster</a>
 </nav>
  
 <main id="main-content">
@@ -370,20 +494,22 @@ footer{
   <div class="hero-inner">
     <div class="hero-eyebrow">
       <div class="hero-eyebrow-line"></div>
-      <span class="hero-eyebrow-text">Online · Ages 7–11 · Opening Summer 2026</span>
+      <span class="hero-eyebrow-text">Online · Ages 7–11 · September Cohorts Now Booking</span>
       <div class="hero-eyebrow-line"></div>
     </div>
-    <h1>Your child is capable<br>of far more than anyone<br>has ever <em>asked of them.</em></h1>
+    <h1>You know your child<br>is brighter than their<br>school report <em>suggests.</em></h1>
     <p class="hero-sub-seo">Online English tuition for primary school children · KS2 Reading &amp; Writing · Years 2–6 · UK-wide</p>
     <p class="hero-statement">
-      Lumina Studios exists to close the gap between where your child is
-      and where they are <strong>capable of being</strong>.
-      Not tutoring. Not a class. A studio — built on the belief that
-      when a child is expected to be great, they become it.
+      You see it at home — the curiosity, the questions, the capacity that doesn't always show up on a school report.
+      <strong>Lumina Studios</strong> exists to close the gap between where your child is
+      and where they are capable of being.
+    </p>
+    <p class="hero-urgency">
+      Free taster sessions are available now. Book one before July and your child's September place is secured.
     </p>
     <div class="taster-cta">
-      <a href="#waitlist" class="taster-btn">Book Your Free Taster Session</a>
-      <span class="taster-note">Free. No commitment. See for yourself what high expectations look like.</span>
+      <a href="#book" class="taster-btn">Book Your Child's Free Taster</a>
+      <span class="taster-note">Free. Workbook posted to your door. No commitment until you've experienced it.</span>
     </div>
   </div>
   <div class="scroll-signal">
@@ -412,35 +538,101 @@ footer{
   </div>
 </div>
  
-<!-- NOT TUTORING -->
-<section class="not-tutoring" aria-label="How Lumina online English tuition works">
-  <div class="nt-left fade-up">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
-      <div style="width:24px;height:1px;background:var(--teal);"></div>
-      <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">Why Lumina exists</span>
-    </div>
-    <h2>You already know<br>your child has<br><em>more to give.</em></h2>
-    <p>You see it at home — the curiosity, the questions, the capacity that doesn't always show up in a school report. The gap between where they are and where they could be isn't a talent gap.</p>
-    <p>It's an expectations gap. Lumina exists to close it. Not by doing more of what school already does — but by holding a higher standard, in a different environment, with a system built to match the child in front of it.</p>
-    <p style="font-size:.88rem;color:rgba(255,255,255,.35);font-style:italic;margin-top:8px;">This is not for every child. It is for the child whose parent has always believed there was more in them.</p>
+<!-- PROBLEM — name the pain -->
+<section class="problem" aria-label="The problem with primary English">
+  <div class="problem-eyebrow">
+    <div style="width:24px;height:1px;background:var(--teal);"></div>
+    <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">The gap nobody talks about</span>
   </div>
-  <div class="nt-right">
-    <div class="nt-card fade-up">
-      <h3>Level, not year group</h3>
+  <h2 class="fade-up">Your child isn't<br>falling behind.<br>They're being <em>held back.</em></h2>
+  <p class="fade-up">In a class of thirty, the teacher's attention goes to the children who are struggling. The children who are coasting — the ones who could do much more if someone just expected it — they get left alone. Not because the teacher doesn't care. Because the system doesn't allow it.</p>
+  <p class="fade-up">Your child doesn't need more homework. They don't need a tutor to go over the same material again. They need <strong>higher expectations in a different environment</strong> — one built to match the child in front of it, not the age group they happen to be in.</p>
+  <p class="fade-up" style="font-size:.88rem;color:rgba(255,255,255,.35);font-style:italic;margin-top:8px;">Lumina is not for every child. It is for the child whose parent has always believed there was more in them.</p>
+</section>
+ 
+<!-- TASTER JOURNEY — what happens after they book -->
+<section class="journey" aria-label="Your child's taster journey">
+  <div class="journey-eyebrow">
+    <div style="width:24px;height:1px;background:var(--teal);"></div>
+    <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">What happens next</span>
+  </div>
+  <h2 class="fade-up">Five steps from<br><em>here to September.</em></h2>
+  <div class="journey-steps">
+    <div class="journey-step fade-up">
+      <div class="journey-step-n">1</div>
+      <h3>Book</h3>
+      <p>Fill in the form below. Takes 30 seconds. No payment required — ever, at this stage.</p>
+    </div>
+    <div class="journey-step fade-up d1">
+      <div class="journey-step-n">2</div>
+      <h3>Receive</h3>
+      <p>We post a taster workbook to your door. Your child has something real to hold before the session even starts.</p>
+    </div>
+    <div class="journey-step fade-up d2">
+      <div class="journey-step-n">3</div>
+      <h3>Experience</h3>
+      <p>Your child joins a live session — Reading Lab and Writing Lab, exactly as every week would be. The real thing.</p>
+    </div>
+    <div class="journey-step fade-up d3">
+      <div class="journey-step-n">4</div>
+      <h3>Report</h3>
+      <p>You receive a short, honest report on how your child performed and which level is right for them.</p>
+    </div>
+    <div class="journey-step fade-up d4">
+      <div class="journey-step-n">5</div>
+      <h3>Decide</h3>
+      <p>If Lumina is right for your child, enrol for September. If it isn't, you walk away. No invoice either way.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- VALUE STACK — transformations, not features -->
+<section class="value-stack" aria-label="What makes Lumina different">
+  <div class="vs-eyebrow">
+    <div style="width:24px;height:1px;background:var(--teal);"></div>
+    <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">Why Lumina works</span>
+  </div>
+  <h2 class="fade-up">Not more work.<br><em>Higher expectations.</em></h2>
+  <div class="vs-grid">
+    <div class="vs-card fade-up">
+      <h3>Work that matches your child, not their age</h3>
       <p>Children are placed at the level they are actually at — not where their school year puts them. A child in Year 5 reading at Year 3 level gets a Year 3 workbook. No embarrassment. No ceiling. Just the right challenge at the right moment.</p>
     </div>
-    <div class="nt-card fade-up d1">
-      <h3>Reading Lab + Writing Lab</h3>
-      <p>One session builds knowledge through rich comprehension passages. The other turns that knowledge into structured, precise writing. Two labs, two purposes, one complete education in English — twice a week, 45 minutes each.</p>
+    <div class="vs-card fade-up d1">
+      <h3>Two skills that unlock everything else</h3>
+      <p>One session builds knowledge through rich comprehension passages. The other turns that knowledge into structured, precise writing. Reading Lab + Writing Lab — twice a week, 45 minutes each. Two labs, two purposes, one complete education in English.</p>
     </div>
-    <div class="nt-card fade-up d2">
-      <h3>Reports posted home</h3>
-      <p>At Week 6 and Week 12, every parent receives a written assessment report from their child's qualified teacher. Not a text at the door. A proper written report — posted to your house — telling you exactly where your child stands and what comes next.</p>
+    <div class="vs-card fade-up d2">
+      <h3>A workbook posted to your door</h3>
+      <p>Every child receives a specialist workbook in the post — built by experienced teachers, designed for the level they're working at. Not a PDF. A real, physical book your child can hold, write in, and take pride in.</p>
     </div>
-    <div class="nt-card fade-up d3">
-      <h3>The Lumina Passport</h3>
-      <p>Every child receives a physical Lumina Passport — a permanent record of their journey through all five levels. It is stamped after every assessment, updated at every level. The taster session is where that journey begins.</p>
+    <div class="vs-card fade-up d3">
+      <h3>You'll know exactly where your child stands</h3>
+      <p>At Week 6 and Week 12, you receive a written assessment report from your child's qualified teacher. Not a text at the door. A proper written report — posted to your house — telling you exactly where they are and what comes next.</p>
     </div>
+    <div class="vs-card fade-up d4">
+      <h3>A journey your child can see and hold</h3>
+      <p>Every child receives a physical Lumina Passport — a permanent record of their journey through all five levels. It is stamped after every assessment, updated at every level. Something real that shows them they're progressing.</p>
+    </div>
+    <div class="vs-card fade-up d4">
+      <h3>A qualified teacher, every session</h3>
+      <p>Not a pre-recorded video. Not a university student. A qualified, experienced teacher leading every session — someone who knows how to stretch a child without breaking them, and when to push and when to pause.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOUNDER TRUST -->
+<section class="founder" aria-label="About the founder">
+  <div class="founder-initial">C</div>
+  <div>
+    <div class="founder-eyebrow">
+      <div style="width:24px;height:1px;background:var(--teal);"></div>
+      <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">The teacher behind Lumina</span>
+    </div>
+    <h2 class="fade-up">Built by a teacher<br>who <em>refused to lower</em><br>the bar.</h2>
+    <p class="fade-up">I'm Conor. I've spent over fifteen years in primary classrooms — fourteen of them as a computing and curriculum lead, working across every year group from Reception to Year 6. I've trialled every approach with real children in real schools.</p>
+    <p class="fade-up">I built Lumina because I kept meeting children who were <strong>capable of far more than anyone was asking of them</strong>. Not because they lacked talent — because the system wasn't built to stretch them. Small groups, high expectations, a teacher who believes they can do it. That's all it takes.</p>
+    <p class="fade-up">Every workbook, every session plan, every assessment — I wrote them. This isn't a franchise. It's my professional life's work, delivered directly to your child.</p>
   </div>
 </section>
  
@@ -452,15 +644,15 @@ footer{
         <div style="width:24px;height:1px;background:var(--teal);"></div>
         <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">Investment</span>
       </div>
-      <h2>The taster is<br>where it<br><em>begins.</em></h2>
+      <h2>Try it first.<br>Then <em>decide.</em></h2>
       <p>If you've read this far, you already believe your child has more to give. The taster session is how you find out whether Lumina is the right place for that belief to become something real.</p>
-      <p>Your child's first session is free. The real thing — not a simplified version. The workbook, both labs, the qualified teacher, the ten-child maximum. Exactly as every week would be.</p>
-      <p>If Lumina is right for your child, you enrol. If it isn't, you walk away. No invoice either way.</p>
+      <p>Your child's first session is free — <strong>the real thing</strong>. The workbook in the post, both labs, the qualified teacher, the ten-child maximum. Exactly as every week would be.</p>
+      <p>After the session, you receive a personal report and a level recommendation. If Lumina is right, you enrol for September. If it isn't, you walk away. No invoice either way.</p>
       <div class="taster-pill">
         <span class="taster-pill-label">Taster session</span>
         <span class="taster-pill-value">Free</span>
       </div>
-      <p style="font-size:.78rem;color:rgba(255,255,255,.35);line-height:1.6;margin-top:8px;">The programme only begins once you've decided Lumina is right for your child.</p>
+      <p style="font-size:.78rem;color:rgba(255,255,255,.35);line-height:1.6;margin-top:8px;">You only pay once you've experienced Lumina and chosen to join.</p>
     </div>
  
     <div class="pricing-right fade-up">
@@ -495,31 +687,59 @@ footer{
         <strong>Re-enrolment</strong> is offered at the end of each 12-week programme based on your child's progress. They move to the next level when they are ready — not when the calendar says so.
       </div>
  
-      <div class="spaces-bar">
-        <div class="spaces-bar-top">
-          <span>First cohort spaces</span>
-          <span>10 available</span>
-        </div>
-        <div class="spaces-bar-track">
-          <div class="spaces-bar-fill" id="spaces-fill"></div>
-        </div>
-      </div>
- 
-      <a href="#waitlist" class="price-btn">Book Free Taster Session</a>
+      <a href="#book" class="price-btn">Book Free Taster Session</a>
     </div>
   </div>
 </section>
  
-<!-- WAITLIST FORM -->
-<section id="waitlist" aria-label="Join the Lumina Studios waiting list">
-  <div class="waitlist-inner">
-    <div class="wl-eyebrow">
-      <div class="wl-eyebrow-line"></div>
-      <span class="wl-eyebrow-text">Online · UK-wide · Summer 2026 · 10 spaces per cohort</span>
-      <div class="wl-eyebrow-line"></div>
+<!-- FAQ -->
+<section class="faq" aria-label="Frequently asked questions">
+  <div class="faq-eyebrow">
+    <div style="width:24px;height:1px;background:var(--teal);"></div>
+    <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">Questions</span>
+  </div>
+  <h2 class="fade-up">What parents <em>ask.</em></h2>
+ 
+  <div class="faq-item">
+    <div class="faq-q">Will my 7-year-old actually focus in an online session?</div>
+    <div class="faq-a">Yes — because the group is tiny. Ten children maximum, with a qualified teacher who can see and respond to every child. It's not a passive video. It's a live, interactive session where your child is expected to contribute. Most parents are surprised by how engaged their child is — and that's exactly why the taster exists. You'll see for yourself.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What if my child doesn't enjoy the taster?</div>
+    <div class="faq-a">Then you walk away. No invoice, no follow-up pressure, no hard feelings. The taster exists precisely so you can find out before committing. We'd rather you know it's not right than enrol a child who won't benefit.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How is this different from a private tutor?</div>
+    <div class="faq-a">A private tutor typically works one-to-one, going over school material at the child's current level. Lumina is a structured programme that progresses through five levels — Reading Lab and Writing Lab, twice a week, with workbooks and assessments built specifically for this system. It's not extra help. It's a higher standard in a different environment.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Is online tuition as effective as face-to-face?</div>
+    <div class="faq-a">For small groups with a qualified teacher, yes. In some ways more so — your child is in a familiar environment, there's no travel time, and the small group size means the teacher can focus on every child. The taster session will show you exactly how it works in practice.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What level will my child be placed at?</div>
+    <div class="faq-a">That's what the taster session is for. After the session, you'll receive a short report telling you which of our five levels is the right starting point for your child. We place by ability, not age — so your child gets work that challenges them without overwhelming them.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">When do the September cohorts start?</div>
+    <div class="faq-a">Cohorts begin in September 2026. Each cohort has a maximum of 10 children. Booking a taster session now secures your child's priority place — you'll choose your preferred cohort time after the taster.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What does my child need for the session?</div>
+    <div class="faq-a">Just a quiet space, a device with a camera and microphone, and the taster workbook we post to you. That's it. No special software — we'll send you a simple link.</div>
+  </div>
+</section>
+ 
+<!-- BOOKING FORM -->
+<section id="book" aria-label="Book your child's free taster session">
+  <div class="book-inner">
+    <div class="book-eyebrow">
+      <div class="book-eyebrow-line"></div>
+      <span class="book-eyebrow-text">Free · Workbook posted to your door · September priority</span>
+      <div class="book-eyebrow-line"></div>
     </div>
     <h2>Your child's<br><em>journey starts here.</em></h2>
-    <p>Register below and we'll be in touch to arrange your child's free taster session. No payment at any point until you've experienced Lumina and chosen to join. If it's right for your child, you'll know.</p>
+    <p>Fill in the form and we'll arrange your child's free taster session. The workbook arrives in the post. After the session, you receive a personal report and level recommendation. No payment at any point until you've experienced Lumina and chosen to join.</p>
  
     <div id="sib-form-container">
       <div id="error-message" class="sib-form-message-panel sib-lumina-error">
@@ -531,7 +751,7 @@ footer{
       <div id="success-message" class="sib-form-message-panel sib-lumina-success">
         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
           <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/></svg>
-          <span class="sib-form-message-panel__inner-text">You're on the list. We'll be in touch to arrange your free taster session.</span>
+          <span class="sib-form-message-panel__inner-text">You're booked in. We'll be in touch to arrange your child's free taster session.</span>
         </div>
       </div>
  
@@ -587,7 +807,7 @@ footer{
           <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" style="width:14px;height:14px;margin-right:8px;vertical-align:middle;"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
           Book My Child's Free Taster Session
         </button>
-        <p class="form-note">No payment at any stage. You only enrol once you've experienced Lumina and decided it's right for your child.<br>Your details are used only to contact you about Lumina Studios.</p>
+        <p class="form-note">No payment at any stage. You only enrol once you've experienced Lumina and decided it's right for your child.<br>We post the workbook to you. Your details are used only to arrange your taster session.</p>
       </form>
     </div>
   </div>
@@ -597,13 +817,13 @@ footer{
  
 <footer>
   <div class="footer-logo">Lumina<span>.</span></div>
-  <div class="footer-text">Online English Learning Studio &nbsp;·&nbsp; Ages 7–11 &nbsp;·&nbsp; UK-wide &nbsp;·&nbsp; Opening Summer 2026</div>
-  <div class="footer-text">© 2026 Lumina Studios &nbsp;·&nbsp; <a href="https://luminastudio.uk" style="color:rgba(255,255,255,.2);text-decoration:none;">luminastudio.uk</a></div>
+  <div class="footer-text">Online English Learning Studio &nbsp;·&nbsp; Ages 7–11 &nbsp;·&nbsp; UK-wide &nbsp;·&nbsp; September 2026</div>
+  <div class="footer-text">© 2026 Lumina Studios &nbsp;·&nbsp; <a href="https://luminastudio.uk" style="color:rgba(255,255,255,.2);text-decoration:none;">luminastudio.uk</a> &nbsp;·&nbsp; <a href="mailto:hello@luminastudio.uk" style="color:rgba(255,255,255,.2);text-decoration:none;">hello@luminastudio.uk</a></div>
 </footer>
  
 <!-- SEO signal -->
 <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
-  Lumina Studios is a premium online English tuition programme for primary school children aged 7 to 11 across the United Kingdom. We offer online reading comprehension tuition and online writing skills tuition for KS2 children in Year 2, Year 3, Year 4, Year 5 and Year 6. Maximum 10 children per cohort. Qualified teacher every session. Specialist English workbooks built by experienced teachers and posted to your door. Free taster session available. Opening Summer 2026.
+  Lumina Studios is a premium online English tuition programme for primary school children aged 7 to 11 across the United Kingdom. We offer online reading comprehension tuition and online writing skills tuition for KS2 children in Year 2, Year 3, Year 4, Year 5 and Year 6. Maximum 10 children per cohort. Qualified teacher every session. Specialist English workbooks built by experienced teachers and posted to your door. Free taster session with workbook included. September 2026 cohorts now booking.
 </div>
  
 <script>
@@ -613,8 +833,13 @@ footer{
   }, { threshold: 0.12 });
   document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
  
-  // Spaces bar
-  window.addEventListener('load', () => { setTimeout(() => { document.getElementById('spaces-fill').style.width = '0%'; }, 600); });
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      item.classList.toggle('open');
+    });
+  });
  
   // Brevo config
   window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
