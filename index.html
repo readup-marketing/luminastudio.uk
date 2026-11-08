@@ -35,23 +35,9 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
  
 <style>
-/* ── Brevo reset ── */
-:where(.sib-form-message-panel){display:none}
-.sib-lumina-error{background:rgba(255,80,80,.12)!important;border:1px solid rgba(255,80,80,.4)!important;border-radius:3px;color:#ffaaaa!important;margin-bottom:16px;padding:12px 16px;font-family:'DM Sans',sans-serif!important;font-size:.85rem!important}
-.sib-lumina-success{background:rgba(42,171,184,.15)!important;border:1px solid rgba(42,171,184,.4)!important;border-radius:3px;color:#2AABB8!important;margin-bottom:16px;padding:12px 16px;font-family:'DM Sans',sans-serif!important;font-size:.85rem!important}
-.sib-lumina-error .sib-notification__icon,.sib-lumina-success .sib-notification__icon{width:16px;height:16px;margin-right:8px;vertical-align:middle;fill:currentColor}
-.lumina-brevo-form{width:100%}
-.lumina-form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.lumina-form-group{display:flex;flex-direction:column}
-.lumina-sms-row{display:grid;grid-template-columns:90px 1fr;gap:8px}
-.lumina-field-error{display:none;font-size:.75rem!important;color:#ff8080!important;background:none!important;border:none!important;padding:2px 0 0!important}
-.lumina-field-error:not(:empty){display:block}
-.input--hidden,.sib-hide-loader-icon{display:none!important}
- 
 /* ── Tokens ── */
 :root{
   --navy:#1B2A4A;--teal:#2AABB8;--light:#E6F6F9;
@@ -385,58 +371,6 @@ nav{
 }
 .faq-item.open .faq-a{max-height:300px}
  
-/* ── BOOKING FORM ── */
-#book{
-  padding:100px 60px;
-  position:relative;overflow:hidden;
-}
-#book::before{
-  content:'';position:absolute;top:-200px;right:-200px;
-  width:600px;height:600px;border-radius:50%;
-  background:radial-gradient(circle,rgba(42,171,184,.08) 0%,transparent 70%);
-  pointer-events:none;
-}
-.book-inner{max-width:580px;margin:0 auto;position:relative;z-index:2;text-align:center}
- 
-.book-eyebrow{display:flex;justify-content:center;align-items:center;gap:12px;margin-bottom:20px}
-.book-eyebrow-line{width:24px;height:1px;background:rgba(42,171,184,.4)}
-.book-eyebrow-text{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
- 
-.book-inner h2{
-  font-size:clamp(2.2rem,4vw,3.4rem);
-  font-weight:400;color:var(--white);
-  line-height:1.1;margin-bottom:16px;
-}
-.book-inner h2 em{font-style:italic;color:var(--teal)}
-.book-inner > p{
-  font-size:.92rem;line-height:1.75;
-  color:rgba(255,255,255,.45);font-weight:300;
-  margin-bottom:44px;
-}
- 
-/* Form */
-.form-group{margin-bottom:14px;text-align:left}
-.form-label{display:block;font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:7px}
-.form-input{
-  width:100%;background:rgba(255,255,255,.05);
-  border:1px solid rgba(255,255,255,.1);color:var(--white);
-  font-family:'DM Sans',sans-serif;font-size:.95rem;
-  padding:13px 16px;border-radius:2px;outline:none;
-  transition:border-color .2s,background .2s;
-}
-.form-input::placeholder{color:rgba(255,255,255,.2)}
-.form-input:focus{border-color:var(--teal);background:rgba(42,171,184,.05)}
-.form-submit{
-  width:100%;margin-top:20px;
-  background:var(--teal);color:var(--white);
-  font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:500;
-  letter-spacing:.1em;text-transform:uppercase;
-  padding:17px;border:none;cursor:pointer;border-radius:2px;
-  transition:all .25s ease;
-}
-.form-submit:hover{background:var(--white);color:var(--navy);transform:translateY(-2px);box-shadow:0 8px 32px rgba(42,171,184,.3)}
-.form-note{margin-top:14px;font-size:.72rem;color:rgba(255,255,255,.25);text-align:center;line-height:1.6}
- 
 /* ── FOOTER ── */
 footer{
   border-top:1px solid rgba(255,255,255,.05);
@@ -472,9 +406,7 @@ footer{
   .pricing-section{padding:80px 24px}
   .pricing-inner{grid-template-columns:1fr}
   .faq{padding:80px 24px}
-  #book{padding:80px 24px}
   footer{padding:28px 24px;flex-direction:column;text-align:center}
-  .lumina-form-row{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -484,7 +416,6 @@ footer{
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Lumina<span>.</span></div>
-  <a href="#book" class="nav-cta">Book Free Taster</a>
 </nav>
  
 <main id="main-content">
@@ -506,12 +437,8 @@ footer{
       Every 45-minute session includes reading and writing. The aim is stronger reading and writing, and clearer expectations, so you know where to help.
     </p>
     <p class="hero-urgency">
-      Book a free taster. A pack is posted to you. Check your email, pick a time, and your child attends.
+      A free taster pack is posted, then a free 45-minute taster. You decide before you pay.
     </p>
-    <div class="taster-cta">
-      <a href="#book" class="taster-btn">Book Your Child's Free Taster</a>
-      <span class="taster-note">Free taster. Pack in the post. You decide before you pay.</span>
-    </div>
   </div>
   <div class="scroll-signal">
     <span>Scroll</span>
@@ -551,28 +478,28 @@ footer{
   <p class="fade-up" style="font-size:.88rem;color:rgba(255,255,255,.35);font-style:italic;margin-top:8px;">Lumina is specialist English tuition for ages 5–11, not general tutoring. Reading and writing are in every session. The aim is stronger reading and writing, and clearer expectations.</p>
 </section>
  
-<!-- TASTER JOURNEY — what happens after they book -->
-<section class="journey" aria-label="Your child's taster journey">
+<!-- OFFER — informational, not a booking path -->
+<section class="journey" aria-label="The Lumina offer">
   <div class="journey-eyebrow">
     <div style="width:24px;height:1px;background:var(--teal);"></div>
-    <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">What happens next</span>
+    <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">The offer</span>
   </div>
-  <h2 class="fade-up">Five simple steps.<br>From taster to <em>sessions.</em></h2>
+  <h2 class="fade-up">From a free taster<br>to <em>sessions.</em></h2>
   <div class="journey-steps">
     <div class="journey-step fade-up">
       <div class="journey-step-n">1</div>
-      <h3>Book</h3>
-      <p>Book the free online taster with the form. No payment.</p>
+      <h3>Taster</h3>
+      <p>A free online taster is part of the offer. No payment.</p>
     </div>
     <div class="journey-step fade-up d1">
       <div class="journey-step-n">2</div>
       <h3>Pack</h3>
-      <p>Your taster pack is posted to your home.</p>
+      <p>A taster pack is posted to your home.</p>
     </div>
     <div class="journey-step fade-up d2">
       <div class="journey-step-n">3</div>
-      <h3>Attend</h3>
-      <p>Check your email and pick a time. Your child attends the free 45-minute taster.</p>
+      <h3>Session</h3>
+      <p>The taster is a free 45-minute session. Reading and writing are both included.</p>
     </div>
     <div class="journey-step fade-up d3">
       <div class="journey-step-n">4</div>
@@ -582,7 +509,7 @@ footer{
     <div class="journey-step fade-up d4">
       <div class="journey-step-n">5</div>
       <h3>Sessions</h3>
-      <p>Book one or two sessions a week. Pay £40 a session, or £400 for 12. The module saves £80.</p>
+      <p>One or two sessions a week. £40 a session, or £400 for 12. The module saves £80.</p>
     </div>
   </div>
 </section>
@@ -646,9 +573,9 @@ footer{
         <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">Investment</span>
       </div>
       <h2>See the work.<br>Then <em>decide.</em></h2>
-      <p>Book a free taster. We post the pack. Check your email, pick a time, and your child attends a 45-minute session.</p>
+      <p>A free taster pack is posted, then a free 45-minute taster.</p>
       <p>Then you decide if it is right. A short note and a level recommendation come with that decision. The taster is free either way.</p>
-      <p>If you continue, book one or two sessions a week. Pay £40 a session, or £400 for 12. The module saves £80. It lasts about 12 weeks at one session a week, or about 6 weeks at two.</p>
+      <p>If you continue, sessions are one or two a week. £40 a session, or £400 for 12. The module saves £80. It lasts about 12 weeks at one session a week, or about 6 weeks at two.</p>
       <div class="taster-pill">
         <span class="taster-pill-label">Taster session</span>
         <span class="taster-pill-value">Free</span>
@@ -661,7 +588,7 @@ footer{
         <div class="price-step active" style="border-right:none;">
           <div class="price-step-n">Step 1</div>
           <div class="price-step-label">Free taster</div>
-          <div class="price-step-sub">Pack posted, then pick a time</div>
+          <div class="price-step-sub">Pack posted, then a free taster</div>
         </div>
         <div class="price-step">
           <div class="price-step-n">Step 2 — if you continue</div>
@@ -678,13 +605,12 @@ footer{
       <div class="price-period">Or £400 for 12 sessions · save £80</div>
 
       <div class="price-detail">
-        <strong>Free taster.</strong> Book it on the form. The pack is posted. Check your email and pick a time. Your child attends. No payment.<br><br>
+        <strong>Free taster.</strong> A taster pack is posted, then a free 45-minute taster. No payment.<br><br>
         <strong>Then you decide.</strong> A short note and a level recommendation come with that decision, before you pay. The taster is free either way.<br><br>
-        <strong>Then you book.</strong> One or two sessions a week. £40 for one 45-minute session, or £400 for 12. Twelve sessions at £40 would be £480, so the module saves £80. About 12 weeks at one session a week, or about 6 weeks at two. The English learning pack and homework book are posted after you pay for the module.<br><br>
+        <strong>If you continue.</strong> One or two sessions a week. £40 for one 45-minute session, or £400 for 12. Twelve sessions at £40 would be £480, so the module saves £80. About 12 weeks at one session a week, or about 6 weeks at two. The English learning pack and homework book are posted after you pay for the module.<br><br>
         Every session includes some reading and some writing. The aim is stronger reading and writing, and clearer expectations. Reading Lab and Writing Lab are the two parts of that same session. Five levels, placed by ability. Your child moves to the next level when they are ready.
       </div>
  
-      <a href="#book" class="price-btn">Book Free Taster Session</a>
     </div>
   </div>
 </section>
@@ -719,106 +645,11 @@ footer{
   </div>
   <div class="faq-item">
     <div class="faq-q">When can my child start?</div>
-    <div class="faq-a">You do not wait for a term date. Book the free taster, get the pack, pick a time by email, and attend. If it is right, book one or two sessions a week. Pay £40 a session, or £400 for 12. At one a week the module is about 12 weeks. At two a week, about 6.</div>
+    <div class="faq-a">You do not wait for a term date. The offer is a free taster pack, then a free taster. Sessions are one or two a week, at £40 a session or £400 for 12. At one a week the module is about 12 weeks. At two a week, about 6.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">What does my child need for the session?</div>
-    <div class="faq-a">A quiet space, a device with a camera and microphone, and the taster pack we post to you. We'll send a simple link for the session.</div>
-  </div>
-</section>
- 
-<!-- BOOKING FORM -->
-<section id="book" aria-label="Book your child's free taster session">
-  <div class="book-inner">
-    <div class="book-eyebrow">
-      <div class="book-eyebrow-line"></div>
-      <span class="book-eyebrow-text">Free taster · Pack posted · Pick a time by email</span>
-      <div class="book-eyebrow-line"></div>
-    </div>
-    <h2>Book the<br><em>free taster.</em></h2>
-    <p>Book a free online taster for a child ages 5–11 who has struggled with English. We post the pack. Check your email and pick a time. After the taster, you decide if it is right. A short note and a level recommendation come with that decision. You only pay if you then book one or two sessions a week.</p>
- 
-    <div id="sib-form-container">
-      <div id="error-message" class="sib-form-message-panel sib-lumina-error">
-        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-          <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"/></svg>
-          <span class="sib-form-message-panel__inner-text">Something went wrong. Please try again.</span>
-        </div>
-      </div>
-      <div id="success-message" class="sib-form-message-panel sib-lumina-success">
-        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-          <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon"><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/></svg>
-          <span class="sib-form-message-panel__inner-text">You're in. Check your email to pick a taster time. The taster pack will be posted to you.</span>
-        </div>
-      </div>
- 
-      <form id="sib-form" method="POST" action="https://04a36ecb.sibforms.com/serve/MUIFADqv2o2irlMO68Cs48jkpo0rckYYGXaa3KoByD66euHG6c_pbhdi96V10ao6d4FpmZhLmHaqb4Mc3fhVrvkT7tXo8PUS8x6oRRNwNn0v3hu_2h1n-wkkg669yHephooHhzdQBuirDIeC3bXc4cyajQxlN0NZeyNKAfIqqDX5qDswAUoinHZDh-l45VaL-Os2sfWi241PecUnkw==" data-type="subscription" class="lumina-brevo-form">
-        <div class="lumina-form-row">
-          <div class="lumina-form-group">
-            <label class="form-label" for="FIRSTNAME">Your first name</label>
-            <input class="form-input" maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="First name" data-required="true" required />
-            <label class="entry__error entry__error--primary lumina-field-error"></label>
-          </div>
-          <div class="lumina-form-group">
-            <label class="form-label" for="LASTNAME">Your last name</label>
-            <input class="form-input" maxlength="200" type="text" id="LASTNAME" name="LASTNAME" autocomplete="off" placeholder="Last name" data-required="true" required />
-            <label class="entry__error entry__error--primary lumina-field-error"></label>
-          </div>
-        </div>
-        <div class="lumina-form-row">
-          <div class="lumina-form-group">
-            <label class="form-label" for="EMAIL">Email address</label>
-            <input class="form-input" type="email" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="your@email.com" data-required="true" required />
-            <label class="entry__error entry__error--primary lumina-field-error"></label>
-          </div>
-          <div class="lumina-form-group">
-            <label class="form-label">Phone number</label>
-            <div class="lumina-sms-row">
-              <select class="form-input lumina-country-select" name="SMS__COUNTRY_CODE" style="padding:13px 8px;font-size:.8rem;">
-                <option value="+44" selected>+44 GB</option>
-                <option value="+1">+1 US</option>
-                <option value="+353">+353 IE</option>
-                <option value="+61">+61 AU</option>
-                <option value="+64">+64 NZ</option>
-              </select>
-              <input type="tel" class="form-input" id="SMS" name="SMS" autocomplete="off" placeholder="07700 000000" data-required="true" required />
-            </div>
-            <label class="entry__error entry__error--secondary lumina-field-error"></label>
-          </div>
-        </div>
-        <div class="lumina-form-row">
-          <div class="lumina-form-group">
-            <label class="form-label" for="ADDRESS">Postal address (so we can post the taster pack)</label>
-            <input class="form-input" maxlength="200" type="text" id="ADDRESS" name="ADDRESS" autocomplete="off" placeholder="Full postal address" data-required="true" required />
-            <label class="entry__error entry__error--primary lumina-field-error"></label>
-          </div>
-          <div class="lumina-form-group">
-            <label class="form-label" for="POSTCODE">Postcode</label>
-            <input class="form-input" maxlength="200" type="text" id="POSTCODE" name="POSTCODE" autocomplete="off" placeholder="e.g. SW1A 1AA" data-required="true" required />
-            <label class="entry__error entry__error--primary lumina-field-error"></label>
-          </div>
-        </div>
-        <div class="lumina-form-row">
-          <div class="lumina-form-group">
-            <label class="form-label" for="CHILDSNAME">Child's first name</label>
-            <input class="form-input" maxlength="200" type="text" id="CHILDSNAME" name="CHILDSNAME" autocomplete="off" placeholder="Child's first name" data-required="true" required />
-            <label class="entry__error entry__error--primary lumina-field-error"></label>
-          </div>
-          <div class="lumina-form-group">
-            <label class="form-label" for="YEARGROUP">Child's current year group</label>
-            <input class="form-input" maxlength="200" type="text" id="YEARGROUP" name="YEARGROUP" autocomplete="off" placeholder="e.g. Year 4" data-required="true" required />
-            <label class="entry__error entry__error--primary lumina-field-error"></label>
-          </div>
-        </div>
-        <input type="text" name="email_address_check" value="" style="display:none;">
-        <input type="hidden" name="locale" value="en">
-        <button type="submit" class="form-submit" form="sib-form">
-          <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" style="width:14px;height:14px;margin-right:8px;vertical-align:middle;"><path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/></svg>
-          Book My Child's Free Taster Session
-        </button>
-        <p class="form-note" id="privacy">No payment now. You only pay once you've experienced Lumina and chosen to join.<br>Your name, email, phone number, address, and your child's name and year group are used only to arrange the free one-to-one taster and post the taster pack.</p>
-      </form>
-    </div>
+    <div class="faq-a">A quiet space, a device with a camera and microphone, and the taster pack. The session uses a simple link.</div>
   </div>
 </section>
  
@@ -832,7 +663,7 @@ footer{
  
 <!-- SEO signal -->
 <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
-  Lumina Studios is specialist online one-to-one English tuition for primary school children ages 5–11 across the United Kingdom who have struggled with English. It is hard for parents to know where to help at home. Maths is often easier to support at home. English is harder, and the expectations are harder to see. The aim is stronger reading and writing, and clearer expectations. Every 45-minute session includes reading and writing, with a qualified experienced teacher. Reading Lab and Writing Lab are the two parts of that same session. Five levels, placed by ability. Parents choose one or two sessions a week. The path is simple: book a free online taster on the form, receive a taster pack in the post, check email to pick a time and attend the free taster, decide if it is right, then book sessions. The taster is free either way. A single session is £40. A module of 12 sessions is £400 and saves £80 versus 12 times £40. The module lasts about 12 weeks at one session a week or about 6 weeks at two a week, and includes an English learning pack and a homework book posted after payment.
+  Lumina Studios is specialist online one-to-one English tuition for primary school children ages 5–11 across the United Kingdom who have struggled with English. It is hard for parents to know where to help at home. Maths is often easier to support at home. English is harder, and the expectations are harder to see. The aim is stronger reading and writing, and clearer expectations. Every 45-minute session includes reading and writing, with a qualified experienced teacher. Reading Lab and Writing Lab are the two parts of that same session. Five levels, placed by ability. Parents choose one or two sessions a week. The offer is a free taster pack in the post, then a free taster. The taster is free either way. A single session is £40. A module of 12 sessions is £400 and saves £80 versus 12 times £40. The module lasts about 12 weeks at one session a week or about 6 weeks at two a week, and includes an English learning pack and a homework book posted after payment.
 </div>
  
 <script>
@@ -849,19 +680,6 @@ footer{
       item.classList.toggle('open');
     });
   });
- 
-  // Brevo config
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-  window.LOCALE = 'en';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Please check this field and try again.";
-  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank.";
-  window.GENERIC_INVALID_MESSAGE = "Please check this field and try again.";
-  window.INVALID_NUMBER = "Please enter a valid number.";
-  window.INVALID_DATE = "Please enter a valid date.";
-  window.REQUIRED_MULTISELECT_MESSAGE = 'Please select at least one option.';
-  window.translation = { common: { selectedList: '{quantity} list selected', selectedLists: '{quantity} lists selected', selectedOption: '{quantity} selected', selectedOptions: '{quantity} selected' } };
-  var AUTOHIDE = Boolean(0);
 </script>
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </body>
 </html>
