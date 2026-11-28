@@ -13,6 +13,19 @@
 <meta property="og:title" content="Lumina Studios | Specialist 1:1 Online English Tuition, Ages 5–11">
 <meta property="og:description" content="Specialist primary English tuition for ages 5–11 who have struggled with English. Stronger reading and writing, and clearer expectations at home. A taster pack is posted, then a free taster. £40 a session, or £400 for 12.">
 <meta property="og:site_name" content="Lumina Studios">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://luminastudio.uk/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lumina Studios: specialist 1:1 online English tuition, ages 5–11">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lumina Studios | Specialist 1:1 Online English Tuition, Ages 5–11">
+<meta name="twitter:description" content="Specialist 1:1 online English with a qualified teacher. A taster pack in the post, then a free 45-minute taster.">
+<meta name="twitter:image" content="https://luminastudio.uk/og-image.png">
+<meta name="theme-color" content="#0F1A2E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -20,6 +33,7 @@
   "name": "Lumina Studios",
   "description": "Specialist online one-to-one English tuition for primary school children ages 5–11 in the United Kingdom who have struggled with English. Every 45-minute session includes reading and writing. The aim is stronger reading and writing, and clearer expectations so parents know where to help at home. Five levels placed by ability, with a qualified teacher. Parents can choose one or two sessions a week.",
   "url": "https://luminastudio.uk",
+  "email": "hello@luminastudio.uk",
   "areaServed": "United Kingdom",
   "audience": { "@type": "EducationalAudience", "educationalRole": "student", "audienceType": "Primary school children ages 5–11" },
   "hasOfferCatalog": {
@@ -27,8 +41,10 @@
     "name": "Lumina Studios",
     "itemListElement": [
       { "@type": "Offer", "name": "Free taster session", "price": "0", "priceCurrency": "GBP", "description": "Free 45-minute online one-to-one taster, with a taster pack posted to your home." },
-      { "@type": "Offer", "name": "Single online session", "price": "40", "priceCurrency": "GBP", "description": "£40 for one 45-minute online one-to-one English session." },
-      { "@type": "Offer", "name": "12-session English module", "price": "400", "priceCurrency": "GBP", "description": "£400 for 12 sessions. Saves £80 versus 12 × £40, and includes an English learning pack and homework book posted after payment." }
+      { "@type": "Offer", "name": "Single online session", "price": "40", "priceCurrency": "GBP", "url": "https://buy.stripe.com/14AfZhh0LdjTc6Cep048000", "description": "£40 for one 45-minute online one-to-one English session." },
+      { "@type": "Offer", "name": "12-session English module", "price": "400", "priceCurrency": "GBP", "url": "https://buy.stripe.com/fZu7sL7qbbbL1rYa8K48001", "description": "£400 for 12 sessions. Saves £80 versus 12 × £40, and includes an English learning pack and homework book posted after payment." },
+      { "@type": "Offer", "name": "11+ English & Verbal Reasoning session", "price": "45", "priceCurrency": "GBP", "url": "https://buy.stripe.com/00w4gz4dZ4NnfiO4Oq48002", "description": "£45 for one 45-minute online one-to-one 11+ English and verbal reasoning session." },
+      { "@type": "Offer", "name": "11+ English & Verbal Reasoning 12-session module", "price": "450", "priceCurrency": "GBP", "url": "https://buy.stripe.com/00w5kDcKv5Rr6Mift448003", "description": "£450 for 12 sessions of one-to-one 11+ English and verbal reasoning. Saves £90 versus 12 × £45." }
     ]
   }
 }
@@ -339,6 +355,19 @@ nav{
   transition:all .25s;
 }
 .price-btn:hover{background:var(--white);color:var(--navy);transform:translateY(-2px)}
+.pay-actions{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.price-btn-secondary{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;min-height:44px;text-align:center;
+  background:transparent;color:var(--white);
+  border:1px solid rgba(42,171,184,.55);
+  font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:12px 14px;border-radius:2px;text-decoration:none;
+  line-height:1.35;transition:all .25s;
+}
+.price-btn-secondary:hover{background:rgba(42,171,184,.12);border-color:var(--teal);color:var(--white)}
+.cta-band .pay-actions{max-width:420px;margin:18px auto 0}
  
 /* ── FAQ ── */
 .faq{
@@ -369,7 +398,7 @@ nav{
   color:rgba(255,255,255,.45);font-weight:300;
   max-height:0;overflow:hidden;transition:max-height .3s ease;
 }
-.faq-item.open .faq-a{max-height:300px}
+.faq-item.open .faq-a{max-height:560px}
  
 /* ── FOOTER ── */
 footer{
@@ -387,6 +416,44 @@ footer{
 .fade-up.visible{opacity:1;transform:translateY(0)}
 .fade-up.d1{transition-delay:.1s}.fade-up.d2{transition-delay:.2s}.fade-up.d3{transition-delay:.3s}.fade-up.d4{transition-delay:.4s}
  
+/* ── BOOKING CTAs, TRUST, SAFETY, 11+ ── */
+.trust-line{
+  list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;
+  margin:36px auto 0;max-width:680px;
+  font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6);
+}
+.trust-line li{display:flex;align-items:center;gap:8px}
+.trust-line li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal)}
+.cta-band{text-align:center;margin-top:56px}
+.cta-band .taster-note{margin-top:12px}
+.price-btn + .pay-note,.pay-note{font-size:.75rem;color:rgba(255,255,255,.5);text-align:center;margin-top:12px;line-height:1.6}
+.safety{
+  border-top:1px solid rgba(42,171,184,.15);
+  padding:100px 60px;max-width:1100px;margin:0 auto;
+}
+.safety h2{font-size:clamp(2.2rem,4vw,3.2rem);font-weight:400;line-height:1.1;color:var(--white);margin-bottom:20px}
+.safety h2 em{font-style:italic;color:var(--teal)}
+.safety-intro{font-size:1rem;line-height:1.8;color:rgba(255,255,255,.55);font-weight:300;max-width:620px;margin-bottom:40px}
+.eleven{
+  border-top:1px solid rgba(42,171,184,.15);
+  padding:100px 60px;
+}
+.eleven-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.eleven h2{font-size:clamp(2rem,3.5vw,2.8rem);font-weight:400;color:var(--white);line-height:1.15;margin-bottom:20px}
+.eleven h2 em{font-style:italic;color:var(--teal)}
+.eleven p{font-size:.95rem;line-height:1.75;color:rgba(255,255,255,.55);font-weight:300;margin-bottom:16px}
+.eleven p strong{color:var(--white);font-weight:400}
+.eleven ul{list-style:none;margin:0 0 8px}
+.eleven li{font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.55);font-weight:300;padding-left:18px;position:relative;margin-bottom:6px}
+.eleven li::before{content:'';position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--teal)}
+.footer-link{color:rgba(255,255,255,.7);text-decoration:underline;text-decoration-color:rgba(42,171,184,.6);text-underline-offset:3px}
+.footer-link:hover{color:var(--teal)}
+.footer-contact{font-size:.85rem;color:rgba(255,255,255,.7)}
+.footer-contact a{color:var(--teal);text-decoration:none;font-weight:500}
+.footer-contact a:hover{text-decoration:underline}
+.sticky-book{display:none}
+a:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+
 /* ── RESPONSIVE ── */
 @media(max-width:860px){
   nav{padding:16px 24px}
@@ -405,8 +472,27 @@ footer{
   .founder-initial{width:64px;height:64px;font-size:1.8rem}
   .pricing-section{padding:80px 24px}
   .pricing-inner{grid-template-columns:1fr}
+  .pricing-right{padding:32px 20px}
   .faq{padding:80px 24px}
-  footer{padding:28px 24px;flex-direction:column;text-align:center}
+  footer{padding:28px 24px 100px;flex-direction:column;text-align:center}
+  .safety{padding:80px 24px}
+  .eleven{padding:80px 24px}
+  .eleven-inner{grid-template-columns:1fr;gap:40px}
+  .nav-cta{padding:7px 14px;font-size:.66rem}
+  .scroll-signal{display:none}
+  .sticky-book{
+    display:flex;position:fixed;left:0;right:0;bottom:0;z-index:150;
+    align-items:center;justify-content:space-between;gap:12px;
+    padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+    background:rgba(15,26,46,.97);backdrop-filter:blur(16px);
+    border-top:1px solid rgba(42,171,184,.3);
+  }
+  .sticky-book span{font-size:.78rem;color:rgba(255,255,255,.7);line-height:1.35}
+  .sticky-book a{
+    flex-shrink:0;background:var(--teal);color:var(--white);text-decoration:none;
+    font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+    padding:12px 18px;border-radius:2px;
+  }
 }
 </style>
 </head>
@@ -414,8 +500,10 @@ footer{
 <a href="#main-content" style="position:absolute;left:-9999px;top:0;z-index:999;background:var(--teal);color:white;padding:8px 16px;font-size:.8rem;" onfocus="this.style.left='0'">Skip to content</a>
  
 <!-- NAV -->
+<!-- Free taster booking: https://calendly.com/luminastudiouk/lumina-free-taster. Earliest times are about two weeks out, because the pack is posted first. -->
 <nav>
   <div class="nav-logo">Lumina<span>.</span></div>
+  <a class="nav-cta" href="https://calendly.com/luminastudiouk/lumina-free-taster" target="_blank" rel="noopener">Book free taster</a>
 </nav>
  
 <main id="main-content">
@@ -437,8 +525,18 @@ footer{
       Every 45-minute session includes reading and writing. The aim is stronger reading and writing, and clearer expectations, so you know where to help.
     </p>
     <p class="hero-urgency">
-      A free taster pack is posted, then a free 45-minute taster. You decide before you pay.
+      A free taster pack is posted first, then a free 45-minute taster. The earliest tasters are about two weeks out, so the pack can arrive before the session. You decide before you pay.
     </p>
+    <div class="taster-cta">
+      <a class="taster-btn" href="https://calendly.com/luminastudiouk/lumina-free-taster" target="_blank" rel="noopener">Book your free taster</a>
+      <span class="taster-note">Free · No payment details needed · Earliest about two weeks out</span>
+    </div>
+    <ul class="trust-line" aria-label="Why parents can trust Lumina">
+      <li>Qualified teacher</li>
+      <li>Enhanced DBS</li>
+      <li>Designated safeguarding lead</li>
+      <li>Parent nearby every session</li>
+    </ul>
   </div>
   <div class="scroll-signal">
     <span>Scroll</span>
@@ -478,7 +576,7 @@ footer{
   <p class="fade-up" style="font-size:.88rem;color:rgba(255,255,255,.35);font-style:italic;margin-top:8px;">Lumina is specialist English tuition for ages 5–11, not general tutoring. Reading and writing are in every session. The aim is stronger reading and writing, and clearer expectations.</p>
 </section>
  
-<!-- OFFER — informational, not a booking path -->
+<!-- OFFER -->
 <section class="journey" aria-label="The Lumina offer">
   <div class="journey-eyebrow">
     <div style="width:24px;height:1px;background:var(--teal);"></div>
@@ -510,6 +608,15 @@ footer{
       <div class="journey-step-n">5</div>
       <h3>Sessions</h3>
       <p>One or two sessions a week. £40 a session, or £400 for 12. The module saves £80.</p>
+    </div>
+  </div>
+  <div class="cta-band fade-up">
+    <a class="taster-btn" href="https://calendly.com/luminastudiouk/lumina-free-taster" target="_blank" rel="noopener">Book your free taster</a>
+    <p class="taster-note">Choose a time and tell us your child's year group. The earliest tasters are about two weeks out, because the pack is posted first.</p>
+    <p class="pay-note">Most families start with a free taster, then pay securely by card via Stripe.</p>
+    <div class="pay-actions" aria-label="Pay for English tuition">
+      <a class="price-btn-secondary" href="https://buy.stripe.com/14AfZhh0LdjTc6Cep048000" target="_blank" rel="noopener">Pay now · £40 session</a>
+      <a class="price-btn-secondary" href="https://buy.stripe.com/fZu7sL7qbbbL1rYa8K48001" target="_blank" rel="noopener">Buy 12 sessions · £400</a>
     </div>
   </div>
 </section>
@@ -558,14 +665,14 @@ footer{
       <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">The teacher behind Lumina</span>
     </div>
     <h2 class="fade-up">For children who<br>have <em>struggled</em><br>with English.</h2>
-    <p class="fade-up">I'm Conor. I've spent over fifteen years in primary classrooms — fourteen of them as a computing and curriculum lead, working across every year group from Reception to Year 6. I've trialled every approach with real children in real schools.</p>
+    <p class="fade-up">I'm Conor. I've spent over fifteen years in primary classrooms — fourteen of them as a computing and curriculum lead, working across every year group from Reception to Year 6. I've trialled every approach with real children in real schools, and I still teach in a primary school today.</p>
     <p class="fade-up">I built Lumina for children who have struggled with English, and for parents who want to help but cannot see where to start. Every session includes reading and writing. You also get a clear sense of what is expected, so you know where to help at home.</p>
     <p class="fade-up">Every workbook, every session plan, every assessment — I wrote them. This isn't a franchise. It's my professional life's work, delivered directly to your child.</p>
   </div>
 </section>
  
 <!-- PRICING -->
-<section class="pricing-section" aria-label="Lumina Studios pricing and taster session">
+<section class="pricing-section" id="pricing" aria-label="Lumina Studios pricing and taster session">
   <div class="pricing-inner">
     <div class="pricing-left fade-up">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
@@ -573,7 +680,7 @@ footer{
         <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">Investment</span>
       </div>
       <h2>See the work.<br>Then <em>decide.</em></h2>
-      <p>A free taster pack is posted, then a free 45-minute taster.</p>
+      <p>A free taster pack is posted first, then a free 45-minute taster. The earliest tasters are about two weeks out.</p>
       <p>Then you decide if it is right. A short note and a level recommendation come with that decision. The taster is free either way.</p>
       <p>If you continue, sessions are one or two a week. £40 a session, or £400 for 12. The module saves £80. It lasts about 12 weeks at one session a week, or about 6 weeks at two.</p>
       <div class="taster-pill">
@@ -605,16 +712,88 @@ footer{
       <div class="price-period">Or £400 for 12 sessions · save £80</div>
 
       <div class="price-detail">
-        <strong>Free taster.</strong> A taster pack is posted, then a free 45-minute taster. No payment.<br><br>
+        <strong>Free taster.</strong> A taster pack is posted first, then a free 45-minute taster. The earliest tasters are about two weeks out, because the pack is posted first. No payment.<br><br>
         <strong>Then you decide.</strong> A short note and a level recommendation come with that decision, before you pay. The taster is free either way.<br><br>
         <strong>If you continue.</strong> One or two sessions a week. £40 for one 45-minute session, or £400 for 12. Twelve sessions at £40 would be £480, so the module saves £80. About 12 weeks at one session a week, or about 6 weeks at two. The English learning pack and homework book are posted after you pay for the module.<br><br>
         Every session includes some reading and some writing. The aim is stronger reading and writing, and clearer expectations. Reading Lab and Writing Lab are the two parts of that same session. Five levels, placed by ability. Your child moves to the next level when they are ready.
+      </div>
+      <a class="price-btn" href="https://calendly.com/luminastudiouk/lumina-free-taster" target="_blank" rel="noopener">Book your free taster</a>
+      <p class="pay-note">Most families start with a free taster, then pay securely by card via Stripe. The earliest tasters are about two weeks out, because the pack is posted first.</p>
+      <div class="pay-actions" aria-label="Pay for English tuition">
+        <a class="price-btn-secondary" href="https://buy.stripe.com/14AfZhh0LdjTc6Cep048000" target="_blank" rel="noopener">Pay now · £40 session</a>
+        <a class="price-btn-secondary" href="https://buy.stripe.com/fZu7sL7qbbbL1rYa8K48001" target="_blank" rel="noopener">Buy 12 sessions · £400</a>
       </div>
  
     </div>
   </div>
 </section>
  
+<!-- 11+ ENGLISH & VERBAL REASONING -->
+<section class="eleven" id="eleven-plus" aria-label="11+ English and verbal reasoning tuition">
+  <div class="eleven-inner">
+    <div class="fade-up">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+        <div style="width:24px;height:1px;background:var(--teal);"></div>
+        <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">11+ English &amp; Verbal Reasoning</span>
+      </div>
+      <h2>Preparing for<br>the <em>Kent Test?</em></h2>
+      <p>For Year 5 families getting ready for the 11+. One-to-one, online, with a qualified teacher. Places start in January, which gives time to build skills steadily before the test in September.</p>
+      <ul>
+        <li>Reading comprehension: retrieval, inference and vocabulary in context</li>
+        <li>Verbal reasoning: word codes, letter patterns and logic, taught step by step</li>
+        <li>Timed practice in the style of the test, so the format feels familiar</li>
+        <li>A clear note on progress, so you know what to practise at home</li>
+      </ul>
+    </div>
+    <div class="pricing-right fade-up">
+      <div style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:6px;">Per 45-minute 11+ session</div>
+      <div class="price-display">
+        <span class="price-currency">£</span>
+        <span class="price-amount">45</span>
+      </div>
+      <div class="price-period">Or £450 for 12 sessions · save £90</div>
+      <div class="price-detail">
+        <strong>Start with the free taster.</strong> We look at where your child is in English and verbal reasoning, then recommend a plan. The earliest tasters are about two weeks out, because the pack is posted first. No payment.<br><br>
+        <strong>Year 5 places from January.</strong> One or two sessions a week. Places are limited, because every session is one-to-one.
+      </div>
+      <a class="price-btn" href="https://calendly.com/luminastudiouk/lumina-free-taster" target="_blank" rel="noopener">Book your free taster</a>
+      <p class="pay-note">Most families start with a free taster, then pay securely by card via Stripe. Mention the 11+ when you book. The earliest tasters are about two weeks out, because the pack is posted first.</p>
+      <div class="pay-actions" aria-label="Pay for 11+ tuition">
+        <a class="price-btn-secondary" href="https://buy.stripe.com/00w4gz4dZ4NnfiO4Oq48002" target="_blank" rel="noopener">Pay now · £45 11+ session</a>
+        <a class="price-btn-secondary" href="https://buy.stripe.com/00w5kDcKv5Rr6Mift448003" target="_blank" rel="noopener">Buy 12 11+ sessions · £450</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFEGUARDING & ONLINE SAFETY -->
+<section class="safety" id="safety" aria-label="Safeguarding and online safety">
+  <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+    <div style="width:24px;height:1px;background:var(--teal);"></div>
+    <span style="font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);">Safe online</span>
+  </div>
+  <h2 class="fade-up">Safe, live and<br><em>one-to-one.</em></h2>
+  <p class="safety-intro fade-up">Your child is taught by a qualified, serving primary teacher with an enhanced DBS check, who is trained as a designated safeguarding lead. These rules apply to every session.</p>
+  <div class="vs-grid">
+    <div class="vs-card fade-up">
+      <h3>A parent nearby</h3>
+      <p>A parent or carer stays at home and within earshot for every session, and is welcome to sit in.</p>
+    </div>
+    <div class="vs-card fade-up d1">
+      <h3>Everything goes through you</h3>
+      <p>We only contact parents. We never message your child directly, by email, chat or social media.</p>
+    </div>
+    <div class="vs-card fade-up d2">
+      <h3>Secure session links</h3>
+      <p>Each session uses a private link and a waiting room on a business account. Nobody else can join.</p>
+    </div>
+    <div class="vs-card fade-up d3">
+      <h3>Not recorded</h3>
+      <p>Sessions are not recorded. Your child's details are only used to teach them, and are kept securely. See our <a class="footer-link" href="/privacy.html">privacy notice</a>.</p>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="faq" aria-label="Frequently asked questions">
   <div class="faq-eyebrow">
@@ -645,11 +824,15 @@ footer{
   </div>
   <div class="faq-item">
     <div class="faq-q">When can my child start?</div>
-    <div class="faq-a">You do not wait for a term date. The offer is a free taster pack, then a free taster. Sessions are one or two a week, at £40 a session or £400 for 12. At one a week the module is about 12 weeks. At two a week, about 6.</div>
+    <div class="faq-a">You do not wait for a term date. The earliest free tasters are about two weeks out, because the taster pack is posted first. Sessions are one or two a week, at £40 a session or £400 for 12. At one a week the module is about 12 weeks. At two a week, about 6.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">What does my child need for the session?</div>
     <div class="faq-a">A quiet space, a device with a camera and microphone, and the taster pack. The session uses a simple link.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How do I book, and when do I pay?</div>
+    <div class="faq-a">Use the <a class="footer-link" href="https://calendly.com/luminastudiouk/lumina-free-taster" target="_blank" rel="noopener">Book your free taster</a> button and pick a time. We ask for your child's year group, your main worry and your address for the taster pack. The earliest tasters are about two weeks out, because the pack is posted first. There is nothing to pay to book. Most families start with a free taster, then pay securely by card via Stripe. The Pay now and Buy buttons sit next to the prices. See our <a class="footer-link" href="/terms.html">terms</a> for cancellations and rescheduling.</div>
   </div>
 </section>
  
@@ -658,12 +841,14 @@ footer{
 <footer>
   <div class="footer-logo">Lumina<span>.</span></div>
   <div class="footer-text">Specialist English tuition &nbsp;·&nbsp; Ages 5–11 &nbsp;·&nbsp; Online 1:1 &nbsp;·&nbsp; UK-wide</div>
-  <div class="footer-text">© 2026 Lumina Studios &nbsp;·&nbsp; <a href="https://luminastudio.uk" style="color:rgba(255,255,255,.2);text-decoration:none;">luminastudio.uk</a> &nbsp;·&nbsp; <a href="mailto:hello@luminastudio.uk" style="color:rgba(255,255,255,.2);text-decoration:none;">hello@luminastudio.uk</a></div>
+  <div class="footer-contact">Questions? Email <a href="mailto:hello@luminastudio.uk">hello@luminastudio.uk</a></div>
+  <div class="footer-text" style="color:rgba(255,255,255,.55);">© 2026 Lumina Studios &nbsp;·&nbsp; <a class="footer-link" href="/privacy.html">Privacy notice</a> &nbsp;·&nbsp; <a class="footer-link" href="/terms.html">Terms</a></div>
 </footer>
- 
-<!-- SEO signal -->
-<div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
-  Lumina Studios is specialist online one-to-one English tuition for primary school children ages 5–11 across the United Kingdom who have struggled with English. It is hard for parents to know where to help at home. Maths is often easier to support at home. English is harder, and the expectations are harder to see. The aim is stronger reading and writing, and clearer expectations. Every 45-minute session includes reading and writing, with a qualified experienced teacher. Reading Lab and Writing Lab are the two parts of that same session. Five levels, placed by ability. Parents choose one or two sessions a week. The offer is a free taster pack in the post, then a free taster. The taster is free either way. A single session is £40. A module of 12 sessions is £400 and saves £80 versus 12 times £40. The module lasts about 12 weeks at one session a week or about 6 weeks at two a week, and includes an English learning pack and a homework book posted after payment.
+
+<!-- Sticky booking bar (mobile only) -->
+<div class="sticky-book" role="region" aria-label="Book a free taster">
+  <span>Free 45-minute taster<br>and a pack in the post</span>
+  <a href="https://calendly.com/luminastudiouk/lumina-free-taster" target="_blank" rel="noopener">Book free taster</a>
 </div>
  
 <script>
